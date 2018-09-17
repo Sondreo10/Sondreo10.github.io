@@ -1,0 +1,27 @@
+article {
+  background-color: blue;
+  text-align: center;
+  border: 5px solid;
+  }
+
+main > article > p {
+  color: white;
+  font-family: cursive;
+}
+
+main > article > h1 {
+  color: white;
+  font-family: cursive;
+}
+
+main > article > h3 {
+  Color: white;
+  font-family: cursive;
+}
+
+main {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  grid-template-columns: 33% 66%;
+}

@@ -1,0 +1,25 @@
+ul {
+  List-style-type: none;
+  : 100px;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  Padding: 15px;
+  background-color: white;
+  border: 3px solid;
+  border-radius: 30px;
+  margin: 50px;
+}
+
+body {
+  background-color: Black;
+}
+
+h1 {
+  color: White;
+  font-family: sans-serif;
+}
