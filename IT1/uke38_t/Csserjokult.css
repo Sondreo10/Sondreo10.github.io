@@ -1,0 +1,55 @@
+Header {
+  text-align: center;
+  background-color: Darkgreen;
+  border-radius: 30px;
+  border: solid 4px;
+  margin: 40px;
+}
+
+li {
+  list-style: none;
+  display: inline-grid;
+  background-color: yellow;
+  Border: solid 4px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+article > p {
+  Color: white;
+  font-family: arial;
+}
+
+main > article {
+  padding: 15px;
+  border-radius: 30px;
+  border: solid 4px;
+  text-align: center;
+  background-color: blue;
+  margin: 20px;
+}
+
+main > a {
+  align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+li > a {
+  color: black;
+  font-family: sans-serif;
+}
+
+Header > h1 {
+  color: white;
+  font-family: arial;
+}
+
+Main > p {
+  color: white;
+  font-family: arial;
+}
