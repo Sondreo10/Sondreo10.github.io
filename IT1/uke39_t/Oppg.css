@@ -1,0 +1,46 @@
+h1 {
+  font-size: 20px;
+}
+
+input {
+  width: 50px;
+}
+
+p:hover {
+  padding: 30px;
+  border: solid 10px;
+  border-color: Blue;
+  color: white;
+  border-radius: 15px;
+  background-color: green;
+}
+
+img:hover {
+  transform: scale(5);
+}
+
+img:active {
+
+}
+
+img {
+  position: static;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  transition: 0.5s;
+}
+
+
+input:focus {
+  width: 500px;
+}
+
+h1:hover {
+  font-size: 60px;
+}
+
+h1::first-letter > :hover{
+  font-size: 42px;
+}
