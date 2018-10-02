@@ -9,6 +9,10 @@ main > article > p {
   font-family: cursive;
 }
 
+li > a {
+  text-decoration: none;
+}
+
 main > article > h1 {
   color: white;
   font-family: cursive;
@@ -21,7 +25,7 @@ main > article > h3 {
 
 main {
   display: grid;
-  grid-column-gap: 20px;
+  grid-column-gap: 10px;
   grid-row-gap: 50px;
   grid-template-columns: 33% 66%;
 }

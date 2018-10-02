@@ -1,0 +1,135 @@
+nav {
+  text-align: center;
+}
+
+div {
+    Display: inline block;
+    margin:auto;
+    border: solid black;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+div.otard:hover > video {
+  width: 95%;
+  transition: 0.5s;
+}
+
+div.fishy {
+  width: 300px;
+}
+
+div.fishy:hover > video{
+  width: 95%;
+  transition: 0.5s;
+}
+
+nav > ul {
+  display: inline-block;
+}
+
+li {
+  margin: 10px;
+  Display: inline;
+  list-style: none;
+  Padding: 15px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+main > div > video {
+  border: solid white;
+  Width: 70%;
+  display: block;
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+div:not(:hover) > video {
+  transition-duration: 0.5s;
+}
+
+main > div > p {
+  margin-left: 8px;
+  Margin-top: 2px;
+  Margin-bottom: 3px;
+}
+
+h2 {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 2px;
+  Margin-left: 8px;
+  margin-top: 5px;
+}
+
+li > a {
+  color: black;
+  text-decoration: none;
+}
+
+article {
+  top: 3px;
+  margin: auto;
+  border: solid black 3px;
+  text-align: center;
+  width: auto;
+  background-color: white;
+}
+
+li:hover {
+  background-color: black;
+}
+
+li:hover > a {
+  color: white;
+}
+
+Header {
+  background-color: red;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  width: 100%;
+  height: 30%;
+}
+
+Body {
+  margin: 0px;
+  grid-row: 30% 50% 30%;
+  background: black;
+}
+
+main {
+  height: 50%;
+  width: 100%;
+  margin-top: 200px;;
+  display: block;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-column-gap: 10px;
+}
+
+h1 {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  Padding: 15px;
+  border-radius: 10px;
+  background-color: White;
+  font-family: Arial;
+  Color: Black;
+  width:360px;
+}
+
+Li > a {
+  color: Black;
+}
