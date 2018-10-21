@@ -1,0 +1,16 @@
+body {
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+}
+
+Header {
+  background-color: yellow;
+}
+
+main {
+  background-color: green;
+}
+
+footer  {
+  background-color: blue;
+}

@@ -1,0 +1,56 @@
+Main
+
+div {
+  Margin: 30px;
+}
+
+Div.Anus1 {
+  Background-color: blue;
+  padding: 15px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+Div.Anus1 > input {
+  width: 50px;
+}
+
+Div.Anus1 > label{
+  Font-family: arial;
+  margin: 10px;
+  color: white;
+}
+
+Div.Anus2 {
+  Background-color: blue;
+  padding: 15px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+Div.Anus2 > input {
+  width: 50px;
+}
+
+Div.Anus2 > label{
+  Font-family: arial;
+  margin: 10px;
+  color: white;
+}
+
+Div.Anus3 {
+  Background-color: blue;
+  padding: 15px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+Div.Anus3 > input {
+  width: 50px;
+}
+
+Div.Anus3 > label {
+  Font-family: arial;
+  margin: 10px;
+  color: white;
+}

@@ -1,0 +1,18 @@
+header {
+
+}
+
+header > h1 {
+  text-align: center;
+  Font-family: Arial;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+  color: white;
+  width: 200px;
+}
+
+@font-face > header > h1 {
+
+}

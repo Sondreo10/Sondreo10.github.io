@@ -1,0 +1,16 @@
+main {
+  display: grid;
+  grid-template-rows: 33% 33% 33%;
+}
+
+header {
+  background-color: red;
+}
+
+main {
+  background-color: blue;
+}
+
+footer {
+  background-color: green;
+}

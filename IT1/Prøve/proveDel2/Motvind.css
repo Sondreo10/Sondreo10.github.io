@@ -1,0 +1,148 @@
+body {
+  background-color: lightblue;
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+}
+
+main > a {
+  text-align: center;
+  font-size: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  Font-family: Arial;
+  Font-style: italic;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: blue;
+  width: 150px;
+}
+
+header {
+  padding-right: 200px;
+  padding-left: 200px;
+  Margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+}
+
+
+nav > ul {
+  text-align: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  text-align: center;
+}
+
+header > h1 {
+  Display: block;
+  Text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: magenta;
+  border-radius: 15px;
+  color: white;
+  width: 400px;
+  Font-size: 50px;
+  font-style: italic;
+  font-family: arial;
+}
+
+nav > ul > li {
+  margin: 10px;
+  display: inline;
+  list-style: none;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: Blue;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: white;
+}
+
+  li:hover {
+    background-color: white;
+}
+
+  li:hover > a {
+    color: blue;
+}
+
+main {
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+main > video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  border: solid black;
+  border-radius: 5px;
+}
+
+Main > table {
+  text-align: left;
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  border: black solid;
+}
+
+Main > table > thead {
+  font-size: 35px;
+}
+
+Main > table > tbody {
+  text-align: center;
+}
+
+main > img {
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main > form {
+  background-color: white;
+  padding: 5px;
+  border: solid black;
+}
+
+main > p {
+  background-color: red;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: 20px;
+  color: white;
+  width: 400px;
+  padding-right: 200px;
+  padding-left: 200px;
+  Margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 0px;
+}
+
+footer {
+  text-align: center;
+  border-radius: 15px;
+  background-color: blue;
+  padding: 5px;
+}
