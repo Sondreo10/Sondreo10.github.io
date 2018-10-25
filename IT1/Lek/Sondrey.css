@@ -1,0 +1,107 @@
+Body {
+  display: grid;
+  grid-template-rows: 30% 50% 20%;
+  background-color: rgb(36, 18, 1);
+  background-image: linear-gradient(to right,);
+}
+
+@font-face {
+    font-family: "Myfirstfont";
+    src: url(Vidaloka-regular.ttf);
+    weight: 100;
+}
+
+@font-face {
+  font-family: "Yeboii";
+  src: url(FeniceStd-Regular.otf);
+}
+
+hr {
+    Color: rgb(206, 210, 0);
+    display: block;
+    height: 0px;
+    border: 1px solid rgb(206, 210, 0);
+    padding: 0;
+    margin-right: 5%;
+    width: 90%;
+}
+
+header > div.Sondrenav > nav {
+  text-align: center;
+}
+
+header > div.Sondrenav nav > ol {
+  text-align: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header > div.Sondrenav > nav > ol > li {
+  display: inline-block;
+}
+
+div.Login > a {
+  font-size: 20px;
+  font-family: "Yeboii";
+  text-decoration: none;
+  text-align: center;
+  color: rgb(206, 210, 0);
+  Border: rgb(206, 210, 0) solid;
+  width: 50px;
+  padding: 5px;
+  background-color: rgb(36, 18, 1);
+}
+
+div.Login {
+  display: block;
+  margin-top: 10px;
+}
+
+header > div.Sondrenav > nav > ol > li > a {
+  Color: rgb(206, 210, 0);
+  text-decoration: none;
+}
+
+header > h1 {
+  margin-top: 0px;
+  font-size: 40px;
+  color: rgb(206, 210, 0);
+  font-family: "Yeboii";
+  weight: 100;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: rgb(206, 210, 0) solid;
+  width: 200px;
+}
+
+Header > div.Sondrenav > nav > ol{
+  list-style: none;
+  color: rgb(206, 210, 0);
+  font-weight: bold;
+  Font-size: 20px;
+}
+
+main > article > p {
+  Color: rgb(206, 210, 0);
+  Text-align: center;
+  font-family: "yeboii";
+  width: 200px;
+  margin-top: 60px;
+}
+
+footer > div.onlyhome > a {
+  display: block;
+  margin-top: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+  color: rgb(206, 210, 0);
+  font-family: "Yeboii";
+  weight: 100;
+  text-align: center;
+  border: rgb(206, 210, 0) solid;
+  width: 200px;
+  text-decoration: none;
+}
