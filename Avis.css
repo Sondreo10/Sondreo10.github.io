@@ -1,6 +1,20 @@
+main {
+  Display: grid;
+  Grid-template-rows: repeat 20%;
+  Grid-template-columns: 30% 70%
+}
+
+article {
+  border: solid black;
+  padding: 5px;
+  border-width: 2px;
+}
+
 h1 {
   Font-size: 20px;
   color: red;
   Display: block;
   Width: 100px;
 }
+
+
