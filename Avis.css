@@ -1,6 +1,6 @@
 h1 {
   Font-size: 20px;
-  Font-color: red;
-  Display: block
+  color: red;
+  Display: block;
   Width: 100px;
 }
