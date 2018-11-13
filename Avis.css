@@ -4,7 +4,7 @@ main {
   Grid-template-columns: 30% 70%
 }
 
-section > h1 {
+section > h2 {
   font-style: none;
   color: black;
   Text-align: center;
