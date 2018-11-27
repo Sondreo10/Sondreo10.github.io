@@ -1,0 +1,114 @@
+body {
+  background: url("Track.jpg") repeat;
+  opacity: 40%;
+  background-position: center;
+  background-size: cover;
+}
+
+div.banan {
+  Border: solid white;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background-color: #4c4d4f;
+}
+
+div.banan > p {
+  margin: 10px;
+  color: white;
+}
+
+div.banan > h2 {
+  margin: 10px;
+  color: white;
+}
+
+
+
+Header {
+
+}
+header > h1 {
+  Text-align: center;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 40px;
+  background-color: #4c4d4f;
+  border: white solid 2px;
+}
+header > nav > ul > li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+header > nav > ul > li > a {
+  Color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 30px;
+}
+header > nav > ul {
+  display: inline-block;
+}
+header > nav {
+  text-align: center;
+  border: solid white;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4c4d4f;
+}
+
+Main > div.banan > img {
+  Width: 300px;
+  align: left;
+}
+
+Main > div.banan > p {
+  Float
+}
+
+Main > section > div.Alfa {
+  Border: solid white;
+  background-color: #4c4d4f;
+  Width: 200px;
+  height: 100px;
+  Margin: 15px;
+}
+
+Main > section > div.Alfa > a > img {
+  Width: 30px;
+  display: block;
+  margin-top: 65px;
+  margin-left: 5px;
+}
+
+Main > section > Div.alfa {
+  margin: 10px;
+}
+
+Main > section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+}
+
+main > section {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+Main > section > div.Alfa > h2{
+  margin-top: -95px;
+  margin-left: 5px;
+  Color: white;
+}
