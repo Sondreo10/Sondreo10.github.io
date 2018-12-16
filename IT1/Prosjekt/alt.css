@@ -1,8 +1,291 @@
+@Font-face {
+  font-family: "Minførste";
+  src: url("Hot Thin Roof.otf");
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid white;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.dropdewn {
+  border: solid white 1px;
+  border-radius: 5px;
+  background: rgb(71, 71, 71, 0.8);
+  color: white padding: 14px;
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.dropdewn {
+  height: 10px;
+}
+
+.droppned {
+  height: 280px;
+}
+
+.droppned {
+  position: relative;
+  display: inline-block;
+}
+
+.droppned-innhold {
+  display: block;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.droppned {
+  transition: 2s;
+  display: block;
+  margin-left: 7px;
+  margin-right: 10px;
+}
+
 body {
-  background: url("Track.jpg") repeat;
+  background: url("F1carbg.jpg");
   opacity: 40%;
-  background-position: center;
   background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-rows: 20, auto, 10;
+}
+
+h2 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: "Minførste";
+  margin: 10px;
+  color: white;
+  font-size: 40px;
+}
+
+a>img {
+  width: 40px;
+}
+
+#content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid white 1px;
+  border-radius: 5px;
+  background: rgb(71, 71, 71, 0.8);
+  width: 379px;
+  font-family: calibri;
+  font-size: 18px;
+  color: #444;
+  max-height: 60px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-height 0.7s;
+}
+
+#content.open {
+  max-height: 450px;
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-height 0.7s;
+}
+
+#show-more {
+  margin-top: -53px;
+  margin-left: 3px;
+  position: absolute;
+  display: block;
+  width: 70px;
+  cursor: pointer;
+}
+
+#slideshow {
+  overflow: hidden;
+  height: 255px;
+  width: 364px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 3764px;
+  -webkit-animation: slide 23s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 255px;
+  width: 364px;
+}
+
+.slide:nth-child(1) {
+  background: url("car1950.jpg");
+}
+
+.slide:nth-child(2) {
+  background: url("f1car1960.jpg");
+}
+
+.slide:nth-child(3) {
+  background: url("f1car1970.jpg");
+}
+
+.slide:nth-child(4) {
+  background: url("f1car1980.jpg");
+}
+
+.slide:nth-child(5) {
+  background: url("f1car1990.jpg")
+}
+
+.slide:nth-child(6) {
+  background: url("f1car2000.jpg")
+}
+
+.slide:nth-child(7) {
+  background: url("f1car2010.jpg")
+}
+
+.slide-number {
+  color: #000;
+  text-align: center;
+  font-size: 10em;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    margin-left: 0px;
+  }
+
+  7% {
+    margin-left: 0px;
+  }
+
+  14% {
+    margin-left: -364px;
+  }
+
+  21% {
+    margin-left: -364px;
+  }
+
+  28% {
+    margin-left: -728px;
+  }
+
+  35% {
+    margin-left: -728px;
+  }
+
+  42% {
+    margin-left: -1092px;
+  }
+
+  49% {
+    margin-left: -1092px;
+  }
+
+  56% {
+    margin-left: -1456px;
+  }
+
+  63% {
+    margin-left: -1456px;
+  }
+
+  70% {
+    margin-left: -1820px;
+  }
+
+  77% {
+    margin-left: -1820px;
+  }
+
+  84% {
+    margin-left: -2184px;
+  }
+
+  91% {
+    margin-left: -2184px;
+  }
+}
+
+table {
+  border: solid white 1px;
+  background: rgb(71, 71, 71, 0.8);
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+thead {
+  border: solid white 1px;
+  color: white;
+}
+
+th {
+  border: solid white 1px;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: "Minførste";
+  text-align: center;
+}
+
+td {
+  border: solid white 1px;
+  color: white;
+}
+
+tr {
+  border: solid white 1px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-family: "Minførste";
+  text-align: center;
+}
+
+tbody {
+  border: solid white 1px;
+  color: white;
+}
+
+a#aa {
+  margin-top: 200px;
+  Border: solid white 1px;
+  border-radius: 5px;
+  display: block;
+  width: 180px;
+  text-align: center;
+  font-size: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background: rgb(71, 71, 71, 0.8);
+  font-style: none;
+  font-family: "Minførste";
+}
+
+section.boys>div.banan {
+  Border: solid white 1px;
+  border-radius: 5px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background: rgb(71, 71, 71, 0.8);
 }
 
 div.banan {
@@ -15,25 +298,31 @@ div.banan {
   margin-top: 50px;
   background: rgb(71, 71, 71, 0.8);
 }
-{}
-div.banan > p {
+
+section.boys>div.banan>p {
   margin: 10px;
   color: white;
 }
 
-div.banan > h2 {
+div.banan>p {
+  margin: 10px;
+  color: white;
+}
+
+div.banan>h2 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: "Minførste";
   margin: 10px;
   color: white;
   font-size: 40px;
 }
 
-Header {
-
-}
-
-header > h1 {
+h1 {
+  letter-spacing: 2px;
+  font-family: "Minførste";
   Text-align: center;
-  width: 1200px;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
   color: white;
@@ -41,45 +330,78 @@ header > h1 {
   background-color: rgb(71, 71, 71, 0.8);
   Border: solid white 1px;
   border-radius: 5px;
+  margin-top: -108px;
 }
 
-header > nav > ul > li > a {
-  Color: white;
-  list-style: none;
-  font-weight: bold;
-  font-size: 30px;
-  text-decoration: none;
-  margin: 30px;
-}
-
-header > nav > ul > li {
-  display: inline-block;
-}
-
-header > nav > ul {
-  list-style: none;
-  display: inline-block;
-}
-
-header > nav {
+nav {
   text-align: center;
   Border: solid white 1px;
   border-radius: 5px;
+  height: 70px;
   width: 800px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgb(71, 71, 71, 0.8);
 }
 
-Main > section.F1vid {
+nav>ul>li>a {
+  display: block;
+  letter-spacing: 2px;
+  font-family: "Minførste";
+  Color: white;
+  list-style: none;
+  font-weight: bold;
+  font-size: 50px;
+  text-decoration: none;
+  margin-top: -10px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul {
+  list-style: none;
+  display: inline-block;
+}
+
+Main>section.F1vid {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+Main>section.F1vid {
   Display: grid;
   grid-template-columns: 33% 33% 33%;
+}
+
+.Teve>h2 {
+  margin-top: 0px;
+  Color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Minførste";
+  letter-spacing: 2px;
+}
+
+#bild {
+  position: sticky;
+  top: 10px;
+  float: right;
+}
+
+#BILD {
+  position: sticky;
+  top: 10px;
 }
 
 div.Teve {
   Border: solid white 1px;
   border-radius: 5px;
-  width: 210px;
+  width: 430px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -87,27 +409,36 @@ div.Teve {
   background: rgb(71, 71, 71, 0.8);
 }
 
-Main > section.F1vid > div.Teve > div.TV > video {
-  Width: 200px;
-  margin: 5px;
+div.Teve>h2 {
+  text-align: center;
+  margin-top: 10px;
 }
 
-Main > div.banan > div#bilD > img {
-  Width: 200px;
-  align: left;
+div.Teve>video {
+  Width: 400px;
+  display: block;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+Div.banan:hover {
+  display: block;
+}
+
+div.banan>img {
+  width: 200px;
   margin-right: 15px;
   margin-left: 10px;
-}
-
-#bilD {
   float: left;
 }
 
-Main > div.banan > p {
+Main>div.banan>p {
   Float
 }
 
-Main > section > div.Alfa {
+Main>section>div.Alfa {
   Border: solid white 1px;
   border-radius: 5px;
   background: rgb(71, 71, 71, 0.8);
@@ -119,7 +450,7 @@ Main > section > div.Alfa {
   margin-right: auto;
 }
 
-div.Alfa > img {
+div.Alfa>img {
   Width: 130px;
   position: absolute;
   display: block;
@@ -127,14 +458,14 @@ div.Alfa > img {
   margin-left: 110px;
 }
 
-Main > section > div.Alfa > a > img {
+Main>section>div.Alfa>a>img {
   Width: 50px;
   display: block;
   margin-top: 60px;
   margin-left: 5px;
 }
 
-Div.Alfa > p {
+Div.Alfa>p {
   position: absolute;
   display: block;
   Font-family: Arial;
@@ -145,7 +476,7 @@ Div.Alfa > p {
   margin-left: 90px;
 }
 
-Main > section {
+Main>section.botique {
   margin-left: auto;
   margin-right: auto;
   width: 700px;
@@ -153,7 +484,7 @@ Main > section {
   grid-template-columns: 50% 50%;
 }
 
-Main > section > div.Alfa > h2{
+Main>section>div.Alfa>h3 {
   margin-top: -110px;
   margin-left: 5px;
   Color: white;

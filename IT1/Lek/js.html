@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nob" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <a id="show-more">Vis mer</a>
+    <script type="text/javascript">
+      var content = document.getElementById("content");
+      var button = document.getElementById("show-more");
+
+      button.onclick = function ()  {
+
+        if(content.className == "open"){
+
+          content.className = "";
+          button.innerHTML = "Show Less";
+        } else{
+
+          content.className = "open"
+          button.innerHTML = "Show Less";}
+
+      };
+
+    </script>
+    <style media="screen">
+      body {
+        background: #eee;
+      }
+
+      #content {
+        width: 400px;
+        background: #fff;
+        padding: 20px;
+        padding-top: 0;
+        font-family: calibri;
+        font-size: 18px;
+        color: #444;
+        margin: 0 auto;
+        max-height: 270px;
+        overflow: hidden;
+        -webkit-transition: max-height 0.7s;
+        -moz-transition: max-height 0.7s;
+        transition: max-height 0.7s;
+      }
+
+      #content.open {
+        max-height: 1000px;
+        -webkit-transition: max-height 0.7s;
+        -moz-transition: max-height 0.7s;
+        transition: max-height 0.7s;
+      }
+
+      #show-more {
+        background: #1594e5;
+        color: #fff;
+        font-family: calibri;
+        display: block;
+        width: 140px;
+        font-size: 24px;
+        text transform: uppercase;
+        padding: 18px;
+        text-align: center;
+        margin: 20px auto;
+        cursor: pointer;
+      }
+
+
+    </style>
+  </body>
+</html>
