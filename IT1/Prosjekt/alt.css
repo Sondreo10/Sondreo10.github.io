@@ -375,7 +375,7 @@ Main>.F1vid {
 
 Main>.F1vid {
   Display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 50% 50%;
 }
 
 .Teve>h2 {
