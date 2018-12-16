@@ -278,7 +278,7 @@ a#aa {
   font-family: "Minførste";
 }
 
-section.boys>div.banan {
+.boys>.banan {
   Border: solid white 1px;
   border-radius: 5px;
   width: 600px;
@@ -288,7 +288,7 @@ section.boys>div.banan {
   background: rgb(71, 71, 71, 0.8);
 }
 
-div.banan {
+.banan {
   Border: solid white 1px;
   border-radius: 5px;
   width: 600px;
@@ -299,17 +299,17 @@ div.banan {
   background: rgb(71, 71, 71, 0.8);
 }
 
-section.boys>div.banan>p {
+.boys>div.banan>p {
   margin: 10px;
   color: white;
 }
 
-div.banan>p {
+.banan>p {
   margin: 10px;
   color: white;
 }
 
-div.banan>h2 {
+.banan>h2 {
   text-align: center;
   letter-spacing: 2px;
   font-family: "Minførste";
@@ -367,13 +367,13 @@ nav>ul {
   display: inline-block;
 }
 
-Main>section.F1vid {
+Main>.F1vid {
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 15px;
 }
 
-Main>section.F1vid {
+Main>.F1vid {
   Display: grid;
   grid-template-columns: 33% 33% 33%;
 }
@@ -398,7 +398,7 @@ Main>section.F1vid {
   top: 10px;
 }
 
-div.Teve {
+.Teve {
   Border: solid white 1px;
   border-radius: 5px;
   width: 430px;
@@ -409,12 +409,12 @@ div.Teve {
   background: rgb(71, 71, 71, 0.8);
 }
 
-div.Teve>h2 {
+.Teve>h2 {
   text-align: center;
   margin-top: 10px;
 }
 
-div.Teve>video {
+.Teve>video {
   Width: 400px;
   display: block;
   margin-top: 5px;
@@ -423,22 +423,22 @@ div.Teve>video {
   margin-bottom: 15px;
 }
 
-Div.banan:hover {
+.banan:hover {
   display: block;
 }
 
-div.banan>img {
+.banan>img {
   width: 200px;
   margin-right: 15px;
   margin-left: 10px;
   float: left;
 }
 
-Main>div.banan>p {
+Main>.banan>p {
   Float
 }
 
-Main>section>div.Alfa {
+Main>section>.Alfa {
   Border: solid white 1px;
   border-radius: 5px;
   background: rgb(71, 71, 71, 0.8);
@@ -450,7 +450,7 @@ Main>section>div.Alfa {
   margin-right: auto;
 }
 
-div.Alfa>img {
+.Alfa>img {
   Width: 130px;
   position: absolute;
   display: block;
@@ -458,14 +458,14 @@ div.Alfa>img {
   margin-left: 110px;
 }
 
-Main>section>div.Alfa>a>img {
+Main>section>.Alfa>a>img {
   Width: 50px;
   display: block;
   margin-top: 60px;
   margin-left: 5px;
 }
 
-Div.Alfa>p {
+.Alfa>p {
   position: absolute;
   display: block;
   Font-family: Arial;
@@ -476,7 +476,7 @@ Div.Alfa>p {
   margin-left: 90px;
 }
 
-Main>section.botique {
+Main>.botique {
   margin-left: auto;
   margin-right: auto;
   width: 700px;
@@ -484,7 +484,7 @@ Main>section.botique {
   grid-template-columns: 50% 50%;
 }
 
-Main>section>div.Alfa>h3 {
+Main>section>.Alfa>h3 {
   margin-top: -110px;
   margin-left: 5px;
   Color: white;
