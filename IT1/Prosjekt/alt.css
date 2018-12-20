@@ -3,14 +3,240 @@
   src: url("Hot Thin Roof.otf");
 }
 
+body {
+  background: url("F1carbg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-rows: 20, auto, 10;
+}
+
+
+/*Header*/
+
+#bild {
+  position: sticky;
+  top: 10px;
+  float: right;
+}
+
+#BILD {
+  position: sticky;
+  top: 10px;
+}
+
+h1 {
+  letter-spacing: 2px;
+  font-family: "Minførste";
+  Text-align: center;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 60px;
+  background-color: rgb(71, 71, 71, 0.8);
+  Border: solid white 1px;
+  border-radius: 5px;
+  margin-top: -110px;
+}
+
+nav {
+  text-align: center;
+  Border: solid white 1px;
+  border-radius: 5px;
+  height: 70px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(71, 71, 71, 0.8);
+}
+
+nav>ul {
+  list-style: none;
+  display: inline-block;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  display: block;
+  letter-spacing: 2px;
+  font-family: "Minførste";
+  Color: white;
+  list-style: none;
+  font-weight: bold;
+  font-size: 50px;
+  text-decoration: none;
+  margin-top: -10px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid white;
+  border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
 }
+
+
+/*Main*/
+
+a#aa {
+  margin-top: 10px;
+  Border: solid white 1px;
+  border-radius: 5px;
+  display: block;
+  width: 180px;
+  text-align: center;
+  font-size: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background: rgb(71, 71, 71, 0.8);
+  font-style: none;
+  font-family: "Minførste";
+}
+
+.banan {
+  Border: solid white 1px;
+  border-radius: 5px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  background: rgb(71, 71, 71, 0.8);
+}
+
+.banan>p {
+  margin: 10px;
+  color: white;
+}
+
+.banan>h2 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: "Minførste";
+  margin: 10px;
+  color: white;
+  font-size: 40px;
+}
+
+.F1vid {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.F1vid {
+  Display: grid;
+  grid-template-columns: 15% 35% 35% 15%;
+}
+
+.Teve>h2 {
+  margin-top: 0px;
+  Color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Minførste";
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.Teve {
+  Border: solid white 1px;
+  border-radius: 5px;
+  width: 430px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  background: rgb(71, 71, 71, 0.8);
+}
+
+.Teve>video {
+  Width: 400px;
+  display: block;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+.banan:hover {
+  display: block;
+}
+
+.banan>img {
+  width: 200px;
+  margin-right: 15px;
+  margin-left: 10px;
+  float: left;
+}
+
+.banan>p {
+  Float
+}
+
+.Alfa {
+  Border: solid white 1px;
+  border-radius: 5px;
+  background: rgb(71, 71, 71, 0.8);
+  Width: 250px;
+  height: 150px;
+  Margin: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Alfa>img {
+  position: absolute;
+  display: block;
+  margin-top: -70px;
+  margin-left: 110px;
+}
+
+.Alfa>a>img {
+  Width: 50px;
+  display: block;
+  margin-top: 60px;
+  margin-left: 5px;
+}
+
+.Alfa>p {
+  position: absolute;
+  display: block;
+  Font-family: Arial;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  margin-top: -100px;
+  margin-left: 90px;
+}
+
+.botique {
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.Alfa>h3 {
+  margin-top: -110px;
+  margin-left: 5px;
+  Color: white;
+  font-size: 25px;
+}
+
+#historie {
+  margin-top: 20px;}
 
 .dropdewn {
   border: solid white 1px;
@@ -22,9 +248,6 @@ hr {
   height: 50px;
   margin-left: 5px;
   margin-bottom: 5px;
-}
-
-.dropdewn {
   height: 10px;
 }
 
@@ -50,15 +273,6 @@ hr {
   display: block;
   margin-left: 7px;
   margin-right: 10px;
-}
-
-body {
-  background: url("F1carbg.jpg");
-  opacity: 40%;
-  background-size: cover;
-  background-attachment: fixed;
-  display: grid;
-  grid-template-rows: 20, auto, 10;
 }
 
 h2 {
@@ -218,6 +432,9 @@ a>img {
   }
 }
 
+
+/*Footer*/
+
 table {
   border: solid white 1px;
   background: rgb(71, 71, 71, 0.8);
@@ -261,9 +478,11 @@ tbody {
   border: solid white 1px;
   color: white;
 }
+<<<<<<< HEAD
+=======
 
 a#aa {
-  margin-top: 200px;
+  margin-top: 10px;
   Border: solid white 1px;
   border-radius: 5px;
   display: block;
@@ -278,17 +497,17 @@ a#aa {
   font-family: "Minførste";
 }
 
-.boys>.banan {
+section.boys>div.banan {
   Border: solid white 1px;
   border-radius: 5px;
   width: 600px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 10px;
   background: rgb(71, 71, 71, 0.8);
 }
 
-.banan {
+div.banan {
   Border: solid white 1px;
   border-radius: 5px;
   width: 600px;
@@ -299,17 +518,17 @@ a#aa {
   background: rgb(71, 71, 71, 0.8);
 }
 
-.boys>div.banan>p {
+section.boys>div.banan>p {
   margin: 10px;
   color: white;
 }
 
-.banan>p {
+div.banan>p {
   margin: 10px;
   color: white;
 }
 
-.banan>h2 {
+div.banan>h2 {
   text-align: center;
   letter-spacing: 2px;
   font-family: "Minførste";
@@ -330,7 +549,7 @@ h1 {
   background-color: rgb(71, 71, 71, 0.8);
   Border: solid white 1px;
   border-radius: 5px;
-  margin-top: -108px;
+  margin-top: -110px;
 }
 
 nav {
@@ -367,15 +586,15 @@ nav>ul {
   display: inline-block;
 }
 
-Main>.F1vid {
+Main>section.F1vid {
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 15px;
 }
 
-Main>.F1vid {
+Main>section.F1vid {
   Display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 15% 35% 35% 15%;
 }
 
 .Teve>h2 {
@@ -398,23 +617,23 @@ Main>.F1vid {
   top: 10px;
 }
 
-.Teve {
+div.Teve {
   Border: solid white 1px;
   border-radius: 5px;
   width: 430px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 10px;
   background: rgb(71, 71, 71, 0.8);
 }
 
-.Teve>h2 {
+div.Teve>h2 {
   text-align: center;
   margin-top: 10px;
 }
 
-.Teve>video {
+div.Teve>video {
   Width: 400px;
   display: block;
   margin-top: 5px;
@@ -423,22 +642,22 @@ Main>.F1vid {
   margin-bottom: 15px;
 }
 
-.banan:hover {
+Div.banan:hover {
   display: block;
 }
 
-.banan>img {
+div.banan>img {
   width: 200px;
   margin-right: 15px;
   margin-left: 10px;
   float: left;
 }
 
-Main>.banan>p {
+Main>div.banan>p {
   Float
 }
 
-Main>section>.Alfa {
+Main>section>div.Alfa {
   Border: solid white 1px;
   border-radius: 5px;
   background: rgb(71, 71, 71, 0.8);
@@ -450,7 +669,7 @@ Main>section>.Alfa {
   margin-right: auto;
 }
 
-.Alfa>img {
+div.Alfa>img {
   Width: 130px;
   position: absolute;
   display: block;
@@ -458,14 +677,14 @@ Main>section>.Alfa {
   margin-left: 110px;
 }
 
-Main>section>.Alfa>a>img {
+Main>section>div.Alfa>a>img {
   Width: 50px;
   display: block;
   margin-top: 60px;
   margin-left: 5px;
 }
 
-.Alfa>p {
+Div.Alfa>p {
   position: absolute;
   display: block;
   Font-family: Arial;
@@ -476,7 +695,7 @@ Main>section>.Alfa>a>img {
   margin-left: 90px;
 }
 
-Main>.botique {
+Main>section.botique {
   margin-left: auto;
   margin-right: auto;
   width: 700px;
@@ -484,9 +703,10 @@ Main>.botique {
   grid-template-columns: 50% 50%;
 }
 
-Main>section>.Alfa>h3 {
+Main>section>div.Alfa>h3 {
   margin-top: -110px;
   margin-left: 5px;
   Color: white;
   font-size: 40px;
 }
+>>>>>>> 1d3e0939b52a3523bcce6a545d0bcf257ed5c874
