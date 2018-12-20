@@ -228,7 +228,7 @@ a#aa {
   grid-template-columns: 50% 50%;
 }
 
-.section > .Alfa > h3 {
+h3 {
   margin-top: -110px;
   margin-left: 5px;
   Color: white;
