@@ -1,0 +1,14 @@
+
+@media(max-width: 1700px) {
+  body{
+  background-image: url( "car1960.jpg");
+
+  background-size: cover;
+  background-attachment: fixed;
+}
+}
+@media(max-width: 800px) {
+  body{
+  background-image: url("car1950.jpg");
+}
+}
