@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nob" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Firbase</title>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBuj4Gyxo9PscHbA0UhX-TGMvsoxzHxFMo",
+      authDomain: "mittprosjaekt.firebaseapp.com",
+      databaseURL: "https://mittprosjaekt.firebaseio.com",
+      projectId: "mittprosjaekt",
+      storageBucket: "mittprosjaekt.appspot.com",
+      messagingSenderId: "898217751046"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+</head>
+
+
+<body>
+
+  <form action="" method="post">
+
+Firstname: <input  id="576" type="text" name="fname" /><br><br>
+
+Lastname: <input id="etternavn" type="text" name="lname" /><br><br>
+
+
+
+<input type="submit" />
+
+</form>
+
+  <p>javascriptalert</p>
+
+  <script type="text/javascript">
+
+    const itpd = firebase.database();
+
+    const contactlist = itpd.ref("contactlist");
+
+    let contact =
+
+    contactlist.push(contact);
+
+    function readFromItpd(snapshot) {
+      let newContact = snapshot.val();
+      document.body.innerHTML += `<p>Fornavn: ${newContact.firstName}. Etternavn: ${newContact.lastName}</p>`;
+    }
+
+    contactlist.on("child_added", readFromItpd)
+  </script>
+</body>
+
+</html>

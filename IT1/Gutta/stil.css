@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(120, 120, 120);
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+header {
+  display: block;
+  position: relative;
+}
+
+main {
+  display: block;
+  position: relative;
+}
+
+/*under ligger navigasjonsbaren*/
+nav{
+  margin: auto;
+}
+
+
+h1 {
+  font-size: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: solid black;
+  background: blue;
+}
+
+.svindel {
+  display: block;
+  display: grid;
+  grid-template-columns: 34% 66%;
+}
+.hbox {
+  border: solid white;
+}
+
+.hbox > h2 {
+  font-size: 20px;
+}
+.hbox > p {
+  margin: 5px;
+}
+
+.navbar{
+
+}
+
+@media (max-width:750px) {  /*Dette er for mobilversjonen (iphone 7 har 750 px i bredden) /*
+
+}

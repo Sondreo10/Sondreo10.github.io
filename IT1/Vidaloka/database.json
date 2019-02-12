@@ -1,0 +1,62 @@
+"1" : {
+  "svar": "En primærnøkkel er et slags unikt kjennemerke for en mengde data"
+}
+
+"2" : {
+  "a":{
+    "svar": "Personnr",
+  "b":{
+    "svar": "Registreringsnr",
+  "C":{
+    "svar": "Latinnavn",
+  "d":{
+    "svar": "Telefonnr",
+  "e":{
+    "svar": "Latinnavn"
+  }
+  }
+  }
+  }
+  }
+}
+
+"3": {
+  "svar":{
+    "Alternativer til primærnøkkel"
+  }
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+"4":{
+  "Fremmednøkler brukes for å unngå dobbeltlagring av data. Hver gang vi endrer eller legger ut
+  noe nytt på f.eks Facebook, brukes primærnøkkelen vår til å kun lagre det som endres.
+  Primærnøkkelen til hver enkelt bruker lagres, og referansen kaller vi en fremmednøkkel."
+}
+"5":{
+  "svar":{
+    "Normalisering er teknikker brukt for å unngå dobbeltlagring av data"
+  }
+}
+
+"6":{
+  "svar":{
+    "brukere":{
+      "tomvegarerteitXD":{
+        "passord": "EH. EH. EH :jiji",
+        "highScore":1337
+      },
+      "tawinterbourne":{
+        "passord": "BOYS",
+        "highScore":1337
+      }
+    },
+    "meldinger":{
+      "001":{
+        "tekst":"Hallahvaskjeer",
+        "brukernavn": "tomvegarerteitXD"
+      },
+      "002":{
+        "tekst":"Hei",
+        "brukernavn": "tawinterbourne"
+      }
+    }
+  }
+}

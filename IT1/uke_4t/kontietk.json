@@ -1,0 +1,21 @@
+{
+  "contatcs": {
+    "1": {
+      "firstName:" : "string"{576},
+      "lastName" : "Brandt",
+      "telephone" : 94152350,
+      "adress" : "Erik Werenskiolds Vei 17",
+      "likerInternett" : false,
+      "booksOnNightable" : ["Theretard", "TomVegar", "TheRetardTomVegar"],
+      "likerHomsesex" : false
+    },
+
+    "2": {
+      "firstName" : "TomVegar",
+      "lastName" : "Terkel",
+      "telephone" : 46286607,
+      "adress" : "Nesøyadritten 7b",
+      "likerHomsesex" : true
+    }
+  }
+}

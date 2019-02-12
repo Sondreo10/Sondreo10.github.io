@@ -1,0 +1,44 @@
+  <!DOCTYPE html>
+  <html lang="nob" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>webstore</title>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAQDOFTQnRSryfFZu5i8pgu2SM4YeIYMrg",
+        authDomain: "webstore-6b309.firebaseapp.com",
+        databaseURL: "https://webstore-6b309.firebaseio.com",
+        projectId: "webstore-6b309",
+        storageBucket: "webstore-6b309.appspot.com",
+        messagingSenderId: "740716648228"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+
+  <body>
+
+    <script type="text/javascript">
+      const db = firebase.database();
+      const sko = db.ref("varer/sko");
+      const jakker = db.ref("varer/jakker");
+
+      function visVare(snapshot){
+        console.log(snapshot.val());
+      }
+
+      //sko.on("child_added",visVare);
+
+      sko
+      .orderByChild("pris") //Sortereringsfunksjon som sorterer på pris
+      .limitToFirst(2) //Sortereringsfunksjon, som gir de to siste
+      .on("child_added", visVare); /*spørrefunksjon, lytter etter nye oppføringer
+                                   og kjører visVare på hver oppføring*/
+
+    </script>
+  </body>
+
+  </html>

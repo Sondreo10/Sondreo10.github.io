@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nob" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>10dubbelch33z</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBYEoet0mjBrSO4QC4QovpAwSvYO9D0f2Q",
+      authDomain: "yeaboi-75072.firebaseapp.com",
+      databaseURL: "https://yeaboi-75072.firebaseio.com",
+      projectId: "yeaboi-75072",
+      storageBucket: "yeaboi-75072.appspot.com",
+      messagingSenderId: "722256180954"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Mine Kontakter</h1>
+  </header>
+
+  <main>
+    <form id="skjema">
+      <input type="text" id="inpNavn" placeholder="navn">
+      <input type="text" id="inpMobil" placeholder="mobil">
+      <input type="text" id="inpEpost" placeholder="epost">
+      <button type="submit">Registrer
+      </button>
+    </form>
+    <section id="secKontakter">
+
+    </section>
+  </main>
+
+
+
+  <script src="script.js" charset="utf-8"></script>
+
+</body>
+
+</html>
