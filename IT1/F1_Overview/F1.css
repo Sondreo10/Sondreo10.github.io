@@ -1,0 +1,240 @@
+body {
+  display: grid;
+  grid-template-rows: 20% 70% 10%;
+  background-color: white;
+}
+
+/*header*/
+
+#h1shop {
+  width: 300px;
+}
+
+#h1kjørere {
+  width: 400px;
+}
+
+header {
+
+}
+
+h1 {
+  display: block;
+  border-radius: 10px;
+  border: solid red 2px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  color: red;
+  margin-top: -5px;
+  text-align: center;
+  font-size: 100px;
+  width: 200px;
+}
+
+.skrt {
+  position: fixed;
+  margin-top: -170px;
+  margin-left: 5px;
+  display: inline-block;
+  width: 50px;
+}
+
+.skrt:hover > .innhold {
+  display: block;
+  border-top: white;
+}
+
+.innhold {
+  width: 52px;
+  display: none;
+  position: absolute;
+  border: red solid 2px;
+  margin-top: -2px;
+}
+
+span {
+  background-color: white;
+  font-size: 48px;
+  color: red;
+  border: solid red;
+}
+
+.skrt:hover > span {
+  border-bottom: solid rgba(0,0,0,0) 2px;
+}
+
+.innhold > a {
+  font-size: 40px;
+  color: red;
+  text-decoration: none;
+}
+
+#fua {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 500px;
+  background-color: white;
+  border: red solid 2px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.nav > a {
+  font-size: 20px;
+  color: red;
+  padding: 15px;
+  margin-top: -1px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+#nav1 {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#nav3 {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.nav > a:hover {
+  background-color: red;
+  color: white;
+}
+
+/*Main*/
+
+main {
+  margin-top: -100px;
+}
+
+section.bies {
+  width: 1300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.boi {
+  border: solid red 2px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.boi2 > img {
+  position: relative;
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.boi2 {
+  margin: 10px;
+}
+
+#eskrt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 800px;
+  margin: auto;
+  margin-right: auto;
+}
+
+.mid > img {
+  width: 200px;
+}
+
+#dyr {
+  margin: 15px;
+  border: solid red 2px;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+#kjører {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+#eskert {
+  border-radius: 5px;
+  margin-top: 130px;
+  border: solid red 2px;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#eskertert {
+  border-radius: 5px;
+  margin-top: 130px;
+  border: solid red 2px;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+}
+
+h2 {
+  text-transform: capitalize;
+}
+
+.shopitems {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid red 2px;
+  width: 180px;
+  margin: 30px;
+  border-radius: 5px;
+}
+
+#items {
+margin-top: 150px;
+border-radius: 5px;
+width: 400px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+#shopunder {
+  margin: 5px;
+  text-align: center;
+}
+
+#shopimag {
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#kjøp {
+  font-size: 20px;
+}

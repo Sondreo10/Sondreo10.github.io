@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Baner</title>
+    <link rel="stylesheet" href="F1.css">
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyAa23f4pd3TeNfBSX5gowzBBGozl-ydtBw",
+    authDomain: "f1-overview.firebaseapp.com",
+    databaseURL: "https://f1-overview.firebaseio.com",
+    projectId: "f1-overview",
+    storageBucket: "f1-overview.appspot.com",
+    messagingSenderId: "1057935598309"
+    };
+    firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>F1</h1>
+      <div class="skrt">
+        <span>F1</span>
+        <div class="innhold">
+          <a href="F2Hjem.html">F2</a>
+          <a href="F3Hjem.html">F3</a>
+          <a href="FEHjem.html">FE</a>
+        </div>
+      </div>
+      <div id="fua">
+      <nav class="nav">
+            <a id="nav1" href="drivers.html">Drivers</a>
+            <a id="nav2" href="races.html">Races</a>
+            <a id="nav2" href="standings.html">Standings</a>
+            <a id="nav3" href="shop.html">Shop</a>
+      </nav>
+    </div>
+    </header>
+
+    <main id="eskertert">
+
+    </main>
+
+    <script type="text/javascript">
+      // rFERANSER TIL HTML ELEMENTER
+      const main = document.querySelector("#eskertert");
+
+      //Kode som henter ut info fra URL
+      let url_string = window.location.href;
+      let url = new URL(url_string);
+      let id = url.searchParams.get("id");
+
+      // Referanser til databasen
+      const db = firebase.database();
+      const pokemon = db.ref("races");
+      const valgtPokemon = db.ref("races/"+id);
+
+      //Setup eller oppstart
+      visValgtPokemon();
+
+      //FUNKSJONSDEFINISJONER
+      function visValgtPokemon(){
+          main.innerHTML = ``;
+          valgtPokemon.on("value", genererHTML);
+      }
+
+      function genererHTML(snapshot){
+          //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
+          let key = snapshot.key;
+          let objekt = snapshot.val();
+          console.log(key,objekt);
+
+          main.innerHTML +=`
+          <div id="kjører">
+            <h2>${key}</h2>
+          <div class="mid">
+            <p id="first">Country:
+            <p id="second">${objekt.country}</p>
+            <p id="first">Date:</p>
+            <p id="second">${objekt.date}</p>
+            <p id="first">Track:</p>
+            <p id="second">${objekt.track}</p>
+            <img src="${key}.png">
+            </div>
+            </div>
+          `
+      }
+
+    </script>
+  </body>
+</html>

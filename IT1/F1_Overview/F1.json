@@ -1,0 +1,274 @@
+{
+  "førere": {
+    "albon": {
+      "championships": 0,
+      "currentteam": "Toro Rosso",
+      "teams": ["Toro Rosso"],
+      "wins2018": 0
+    },
+    "bottas": {
+      "championships": 0,
+      "currentteam": "Williams",
+      "teams": ["Williams"],
+      "wins2018": 0
+    },
+    "gasly": {
+      "championships": 0,
+      "currentteam": "Redbull",
+      "teams": ["Redbull", "Toro Rosso", "Redbull"],
+      "wins2018": 0
+    },
+    "giovinazzi": {
+      "championships": 0,
+      "currentteam": "Sauber",
+      "teams": ["Sauber"],
+      "wins2018": 0
+    },
+    "grosjean": {
+      "championships": 0,
+      "currentteam": "Haas",
+      "teams": ["Renault", "Lotus", "Haas"],
+      "wins2018": 0
+    },
+    "hamilton": {
+      "championships": 5,
+      "currentteam": "Mercedes",
+      "teams": ["McLaren", "Mercedes"],
+      "wins2018": 11
+    },
+    "hulkenberg": {
+      "championships": 0,
+      "currentteam": "Renault",
+      "teams": ["Williams", "Force India", "Sauber", "Renault"],
+      "wins2018": 0
+    },
+    "kubica": {
+      "championships": 0,
+      "currentteam": "Williams",
+      "teams": ["BMW-Sauber", "Renault", "Williams"],
+      "wins2018": 0
+    },
+    "kyvat": {
+      "championships": 0,
+      "currentteam": "Toro Rosso",
+      "teams": ["Toro Rosso", "Redbull", "Toro Rosso"],
+      "wins2018": 0
+    },
+    "leclerc": {
+      "championships": 0,
+      "currentteam": "Ferrari",
+      "teams": ["Sauber", "Ferrari"],
+      "wins2018": 0
+    },
+    "magnussen": {
+      "championships": 0,
+      "currentteam": "Haas",
+      "teams": ["McLaren", "Renault", "Haas"],
+      "wins2018": 0
+    },
+    "norris": {
+      "championships": 0,
+      "currentteam": "McLaren",
+      "teams": ["McLaren"],
+      "wins2018": 0
+    },
+    "perez": {
+      "championships": 0,
+      "currentteam": "Force India",
+      "teams": ["Sauber", "McLaren", "Force India"],
+      "wins2018": 0
+    },
+    "raikkonen": {
+      "championships": 1,
+      "currentteam": "Sauber",
+      "teams": ["Lotus", "Ferrari", "Sauber"],
+      "wins2018": 1
+    },
+    "ricciardo": {
+      "championships": 0,
+      "currentteam": "Renault",
+      "teams": ["Redbull", "Renault"],
+      "wins2018": 2
+    },
+    "russell": {
+      "championships": 0,
+      "currentteam": "Williams",
+      "teams": ["Force India", "Williams"],
+      "wins2018": 0
+    },
+    "sainz": {
+      "championships": 0,
+      "currentteam": "McLaren",
+      "teams": ["Toro Rosso", "Renault", "McLaren"],
+      "wins-2018": 0
+    },
+    "stroll": {
+      "championships": 0,
+      "currentteam": "Force India",
+      "teams": ["Williams", "Force India"],
+      "wins2018": 0
+    },
+    "verstappen": {
+      "championships": 0,
+      "currentteam": "Redbull",
+      "teams": ["Redbull"],
+      "wins2018": 1
+    },
+    "vettel": {
+      "championships": 4,
+      "currentteam": "Ferrari",
+      "teams": ["BMW Sauber", "Toro Rosso", "Redbull", "Ferrari"],
+      "wins2018": 5
+    }
+  },
+  "races": {
+    "1": {
+      "country": "Australia",
+      "date": "17.03",
+      "round": 1,
+      "track": "Albert Park"
+    },
+    "2": {
+      "country": "Bahrain",
+      "date": "31.03",
+      "round": 2,
+      "track": "Bahrain Internacional Circuit"
+    },
+    "3": {
+      "country": "China",
+      "date": "14.04",
+      "round": 3,
+      "track": "Shanghai Internacional Circuit"
+    },
+    "4": {
+      "country": "Aserbaijan",
+      "date": "28.04",
+      "round": 4,
+      "track": "Baku City Circuit"
+    },
+    "5": {
+      "country": "Spain",
+      "date": "12.05",
+      "round": 5,
+      "track": "Circuit de Catalunya"
+    },
+    "6": {
+      "country": "Monaco",
+      "date": "26.04",
+      "round": 6,
+      "track": "Monaco"
+    },
+    "7": {
+      "country": "Canada",
+      "date": "09.06",
+      "round": 7,
+      "track": "Circuit Gilles Villeneuve"
+    },
+    "8": {
+      "country": "France",
+      "date": "23.06",
+      "round": 8,
+      "track": "Paul Ricard"
+    },
+    "9": {
+      "country": "Austria",
+      "date": "30.06",
+      "round": 9,
+      "track": "Red Bull Ring (A1-Ring)"
+    },
+    "10": {
+      "country": "Britain",
+      "date": "14.07",
+      "round": 10,
+      "track": "Silverstone Circuit"
+    },
+    "11": {
+      "country": "Germany",
+      "date": "28.07",
+      "round": 11,
+      "track": "Hockenheimring"
+    },
+    "12": {
+      "country": "Hungary",
+      "date": "04.09",
+      "round": 12,
+      "track": "Hungaroring"
+    },
+    "13": {
+      "country": "Belgium",
+      "date": "01.10",
+      "round": 13,
+      "track": "Spa Francorchamps Circuit"
+    },
+    "14": {
+      "country": "Italy",
+      "date": "08.10",
+      "round": 14,
+      "track": "Autodromo Nazionale Monza"
+    },
+    "15": {
+      "country": "Singapore",
+      "date": "22.10",
+      "round": 15,
+      "track": "Singapore Circuit"
+    },
+    "16": {
+      "country": "Russia",
+      "date": "29.10",
+      "round": 16,
+      "track": "Sochi Internacional Street Circuit"
+    },
+    "17": {
+      "country": "Japan",
+      "date": "13.11",
+      "round": 17,
+      "track": "Suzuka Circuit"
+    },
+    "18": {
+      "country": "Mexico",
+      "date": "27.11",
+      "round": 18,
+      "track": "Autodromo Hermanos Rodriguez"
+    },
+    "19": {
+      "country": "United States",
+      "date": "3.12",
+      "round": 19,
+      "track": "Circuit of The Americas"
+    },
+    "20": {
+      "country": "Brazil",
+      "date": "17.12",
+      "round": 20,
+      "track": "Autodromo Interlagos"
+    },
+    "21": {
+      "country": "Abu Dhabi",
+      "date": "1.12",
+      "round": 21,
+      "track": "Yas Marina Circuit"
+    }
+  },
+  "shop": {
+    "caps": {
+      "pris": 340,
+      "farge": "hvit"
+    },
+    "genser": {
+      "pris": 500,
+      "farge": "svart"
+    },
+    "dunjakke": {
+      "pris": 700,
+      "farge": "rød"
+    },
+    "sokker": {
+      "pris": 200,
+      "farge": "rød"
+    },
+    "bokser": {
+      "pris": 250,
+      "farge": "grønn"
+    }
+  }
+}

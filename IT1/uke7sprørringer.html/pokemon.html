@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Pokemon drit</title>
     <link rel="stylesheet" href="stil.css">
     <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
     <script>
@@ -23,14 +23,16 @@
   <body>
 
     <header>
+      <div class="shit">
       <button type="button" name="button" onclick="visSterkeste()">Max CP</button>
       <button type="button" name="button" onclick="visNummer()">Nummer</button>
       <button type="button" name="button" onclick="visSvakeste()">Svakeste</button>
+    </div>
     </header>
 
     <main>
       <section id="secAllPokemon">
-        <p>Laster inn pokemon..</p>
+        <p></p>
       </section>
     </main>
 
@@ -66,7 +68,7 @@
         secAllPokemon.innerHTML = ``
         pokemon
         .orderByKey()
-        .limitToLast(10)
+        .limitToFirst(10)
         .on("child_added",visPokemon)
       }
 

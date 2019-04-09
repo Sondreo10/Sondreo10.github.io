@@ -1,0 +1,23 @@
+{"shop": {
+  "caps": {
+    "pris": 340,
+    "farge": "svart",
+  },
+  "genser": {
+    "pris": 500,
+    "farge": "svart",
+  },
+  "dunjakke": {
+    "pris": 700,
+    "farge": "rød",
+  },
+  "sokker": {
+    "pris": 200,
+    "farge": "rød",
+  },
+  "bokser": {
+    "pris": 250,
+    "farge": "grønn",
+  }
+ }
+}
