@@ -3,13 +3,26 @@
 
 <head>
   <meta charset="utf-8">
-  <title>F1 Overview</title>
+  <title>Standings</title>
   <link rel="stylesheet" href="F1.css">
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script>
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyAa23f4pd3TeNfBSX5gowzBBGozl-ydtBw",
+  authDomain: "f1-overview.firebaseapp.com",
+  databaseURL: "https://f1-overview.firebaseio.com",
+  projectId: "f1-overview",
+  storageBucket: "f1-overview.appspot.com",
+  messagingSenderId: "1057935598309"
+};
+firebase.initializeApp(config);
+</script>
 </head>
 
 <body>
   <header>
-    <h1>Formula 1</h1>
+    <h1>F1</h1>
     <div class="skrt">
       <span>F1</span>
       <div class="innhold">
@@ -18,7 +31,7 @@
         <a href="FEHjem.html">FE</a>
       </div>
     </div>
-    <nav>
+    <nav class="nav">
           <a id="nav1" href="drivers.html">Drivers</a>
           <a id="nav2" href="races.html">Races</a>
           <a id="nav2" href="standings.html">Standings</a>
@@ -27,6 +40,9 @@
   </header>
 
   <main>
+    <section id="standin">
+
+    </section>
   </main>
 
   <footer>
@@ -39,6 +55,42 @@
       </tbody>
     </table>
   </footer>
+  <script type="text/javascript">
+  const main = document.querySelector("#eskrt"); // Variabel som referer til mian-elementet
+
+    // Referanser til databasen
+  const db = firebase.database();
+  const pokemon = db.ref("races"); // Referer til alt som ligger under sko i databasen
+
+  function visPokemon(snapshot){
+        //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
+      let f1Snap = snapshot.val();
+      let key = snapshot.key;
+
+      main.innerHTML +=`
+          <article id="dyr">
+          <div id="kjører">
+            <table>
+            <thead>
+            <tr>
+            <th>Position: ${}</th>
+            <th>Name: ${key}</th>
+            <th>Team:</th>
+            <th>Points:</th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            </tr>
+            </tbody>
+            </table>
+          </article>
+      `;
+  }
+
+
+  </script>
 </body>
 
 </html>
