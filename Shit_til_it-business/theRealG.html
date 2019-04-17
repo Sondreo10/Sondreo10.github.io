@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rom</title>
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA2CQQmlxboLDWgwVgcWJ820ntEUOIPJ-8",
+    authDomain: "skole-72046.firebaseapp.com",
+    databaseURL: "https://skole-72046.firebaseio.com",
+    projectId: "skole-72046",
+    storageBucket: "skole-72046.appspot.com",
+    messagingSenderId: "39127343694"
+  };
+  firebase.initializeApp(config);
+</script>
+  </head>
+  <body>
+    <style media="screen">
+
+    </style>
+    <main>
+      <div id="eskrt">
+      </div>
+    </main>
+    <script type="text/javascript">
+    const main = document.querySelector("#eskrt");
+    const db = firebase.database();
+    const rom = db.ref("rom")
+
+    price();
+
+    function pris() {
+      rom
+      .orderByChild("price")
+      .on("child_added", generateThing)
+      console.log("pris()")
+    }
+
+    function price() {
+      rom
+      .orderByChild("price")
+      .on("child_added", generateThing)
+      console.log("pris()")
+    }
+
+    function generateThing(snapshot) {
+      let key = snapshot.key;
+      let blue = snapshot.val();
+
+      main.innerHTML +=`
+      <h2>Room nr: ${key}</h2>
+      <p>Price: ${blue.price}</p>
+      <p>View rating: ${blue.view}</p>
+      <p>Beds: ${blue.beds}</p>
+      `
+    }
+
+    function generateThing(snapshot) {
+      let key = snapshot.key;
+      let blue = snapshot.val();
+
+      main.innerHTML =`
+      <h2>Room nr: ${key}</h2>
+      <p>Price: ${blue.price}</p>
+      <p>View rating: ${blue.view}</p>
+      <p>Beds: ${blue.beds}</p>
+      ` + main.innerHTML;
+    }
+
+    </script>
+  </body>
+</html>

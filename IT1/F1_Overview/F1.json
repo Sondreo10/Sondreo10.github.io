@@ -1,120 +1,140 @@
 {
   "førere": {
     "albon": {
+      "points": 3,
       "championships": 0,
       "currentteam": "Toro Rosso",
       "teams": ["Toro Rosso"],
       "wins2018": 0
     },
     "bottas": {
+      "points": 62,
       "championships": 0,
       "currentteam": "Williams",
       "teams": ["Williams"],
       "wins2018": 0
     },
     "gasly": {
+      "points": 13,
       "championships": 0,
       "currentteam": "Redbull",
       "teams": ["Redbull", "Toro Rosso", "Redbull"],
       "wins2018": 0
     },
     "giovinazzi": {
+      "points": 0,
       "championships": 0,
       "currentteam": "Sauber",
       "teams": ["Sauber"],
       "wins2018": 0
     },
     "grosjean": {
+      "points": 0,
       "championships": 0,
       "currentteam": "Haas",
       "teams": ["Renault", "Lotus", "Haas"],
       "wins2018": 0
     },
     "hamilton": {
+      "points": 68,
       "championships": 5,
       "currentteam": "Mercedes",
       "teams": ["McLaren", "Mercedes"],
       "wins2018": 11
     },
     "hulkenberg": {
+      "points": 6,
       "championships": 0,
       "currentteam": "Renault",
       "teams": ["Williams", "Force India", "Sauber", "Renault"],
       "wins2018": 0
     },
     "kubica": {
+      "points": 0,
       "championships": 0,
       "currentteam": "Williams",
       "teams": ["BMW-Sauber", "Renault", "Williams"],
       "wins2018": 0
     },
     "kyvat": {
+      "points": 1,
       "championships": 0,
       "currentteam": "Toro Rosso",
       "teams": ["Toro Rosso", "Redbull", "Toro Rosso"],
       "wins2018": 0
     },
     "leclerc": {
+      "points": 36,
       "championships": 0,
       "currentteam": "Ferrari",
       "teams": ["Sauber", "Ferrari"],
       "wins2018": 0
     },
     "magnussen": {
+      "points": 8,
       "championships": 0,
       "currentteam": "Haas",
       "teams": ["McLaren", "Renault", "Haas"],
       "wins2018": 0
     },
     "norris": {
+      "points": 8,
       "championships": 0,
       "currentteam": "McLaren",
       "teams": ["McLaren"],
       "wins2018": 0
     },
     "perez": {
+      "points": 5,
       "championships": 0,
       "currentteam": "Force India",
       "teams": ["Sauber", "McLaren", "Force India"],
       "wins2018": 0
     },
     "raikkonen": {
+      "points": 12,
       "championships": 1,
       "currentteam": "Sauber",
       "teams": ["Lotus", "Ferrari", "Sauber"],
       "wins2018": 1
     },
     "ricciardo": {
+      "points": 6,
       "championships": 0,
       "currentteam": "Renault",
       "teams": ["Redbull", "Renault"],
       "wins2018": 2
     },
     "russell": {
+      "points": 0,
       "championships": 0,
       "currentteam": "Williams",
       "teams": ["Force India", "Williams"],
       "wins2018": 0
     },
     "sainz": {
+      "points": 0,
       "championships": 0,
       "currentteam": "McLaren",
       "teams": ["Toro Rosso", "Renault", "McLaren"],
       "wins-2018": 0
     },
     "stroll": {
+      "points": 2,
       "championships": 0,
       "currentteam": "Force India",
       "teams": ["Williams", "Force India"],
       "wins2018": 0
     },
     "verstappen": {
+      "points": 39,
       "championships": 0,
       "currentteam": "Redbull",
       "teams": ["Redbull"],
       "wins2018": 1
     },
     "vettel": {
+      "points": 37,
       "championships": 4,
       "currentteam": "Ferrari",
       "teams": ["BMW Sauber", "Toro Rosso", "Redbull", "Ferrari"],
@@ -269,6 +289,11 @@
     "bokser": {
       "pris": 250,
       "farge": "grønn"
+    }
+  },
+  "nummerEn": {
+    "bareEn": {
+      "nummer": 1
     }
   }
 }
