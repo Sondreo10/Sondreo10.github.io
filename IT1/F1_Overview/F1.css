@@ -189,16 +189,10 @@ main {
 #linkStilish {
   text-decoration: none;
   font-family: "under2";
+  position: relative;
+  display: block;
+  transition: 0s;
 }
-
-#linkStilish:hover {
-  background-color: red;
-  color: white;
-  transition: 0.2s;
-  padding: 4px;
-  border-radius: 4px;
-}
-
 #shopen {
   margin-top: 90px;
   display: grid;

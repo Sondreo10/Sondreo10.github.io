@@ -18,56 +18,26 @@
 </script>
   </head>
   <body>
-    <style media="screen">
-
-    </style>
-    <main>
-      <div id="eskrt">
+    <button onclick="glue()"></button>
+      <div id="skert">
       </div>
-    </main>
     <script type="text/javascript">
-    const main = document.querySelector("#eskrt");
+    const main = document.querySelector("#skert");
     const db = firebase.database();
-    const rom = db.ref("rom")
-
-    price();
-
-    function pris() {
-      rom
-      .orderByChild("price")
-      .on("child_added", generateThing)
-      console.log("pris()")
-    }
-
-    function price() {
-      rom
-      .orderByChild("price")
-      .on("child_added", generateThing)
-      console.log("pris()")
-    }
+    const rom = db.ref("førere");
 
     function generateThing(snapshot) {
-      let key = snapshot.key;
-      let blue = snapshot.val();
-
       main.innerHTML +=`
-      <h2>Room nr: ${key}</h2>
-      <p>Price: ${blue.price}</p>
-      <p>View rating: ${blue.view}</p>
-      <p>Beds: ${blue.beds}</p>
-      `
+      <h2>Room nr: ${math.floor((math.random() * 10) + 1)}</h2>
+      <p>Price: ${math.floor((math.random() * 10) + 1)}</p>
+      <p>Shower: ${math.floor((math.random() * 10) + 1)}</p>
+      <p>View rating: ${math.floor((math.random() * 10) + 1)}</p>
+      <p>Beds: ${math.floor((math.random() * 10) + 1)}</p>
+      `;
     }
 
-    function generateThing(snapshot) {
-      let key = snapshot.key;
-      let blue = snapshot.val();
-
-      main.innerHTML =`
-      <h2>Room nr: ${key}</h2>
-      <p>Price: ${blue.price}</p>
-      <p>View rating: ${blue.view}</p>
-      <p>Beds: ${blue.beds}</p>
-      ` + main.innerHTML;
+    function glue() {
+      rom.on("child_added", generateThing);
     }
 
     </script>
