@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Baner</title>
-    <link rel="stylesheet" href="F1.css">
+    <link rel="stylesheet" href="../css/F1.css">
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
     <script>
     // Initialize Firebase
@@ -21,14 +21,6 @@
   <body>
     <header>
       <h1 id="h1kjørere">Races</h1>
-      <div class="skrt">
-        <span>F1</span>
-        <div class="innhold">
-          <a href="F2Hjem.html">F2</a>
-          <a href="F3Hjem.html">F3</a>
-          <a href="FEHjem.html">FE</a>
-        </div>
-      </div>
       <nav class="nav">
         <ul>
             <li><a href="drivers.html">Drivers</a></li>
@@ -73,7 +65,7 @@
           console.log(key,objekt);
 
           main.innerHTML +=`
-          <div id="kjører">
+          <div id="kjører2">
             <h2>${key}</h2>
           <div class="mid">
             <p id="first">Country:
@@ -82,7 +74,7 @@
             <p id="second">${objekt.date}</p>
             <p id="first">Track:</p>
             <p id="second">${objekt.track}</p>
-            <img src="${key}.png">
+            <img src="../bilder/${key}.png">
             </div>
             </div>
           `

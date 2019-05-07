@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Drivers</title>
-    <link rel="stylesheet" href="F1.css">
+    <link rel="stylesheet" href="../css/F1.css">
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
     <script>
     // Initialize Firebase
@@ -21,14 +21,6 @@
   <body>
     <header>
       <h1 id="h1kjørere">DRIVERS</h1>
-      <div class="skrt">
-        <span>F1</span>
-        <div class="innhold">
-          <a href="F2Hjem.html">F2</a>
-          <a href="F3Hjem.html">F3</a>
-          <a href="FEHjem.html">FE</a>
-        </div>
-      </div>
       <nav class="nav">
         <ul>
             <li><a href="shop.html">Shop</a></li>
@@ -83,7 +75,7 @@
               <p id="second">${objekt.teams}</p>
               <p id="first">Championships won:</p>
               <p id="second">${objekt.championships}</p>
-              <img src="${key}.jpg">
+              <img src="../bilder/${key}.jpg">
               </div>
               </div>
             `

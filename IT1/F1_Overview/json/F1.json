@@ -8,10 +8,10 @@
       "wins2018": 0
     },
     "bottas": {
-      "points": 62,
+      "points": 87,
       "championships": 0,
-      "currentteam": "Williams",
-      "teams": ["Williams"],
+      "currentteam": "Mercedes",
+      "teams": ["Mercedes"],
       "wins2018": 0
     },
     "gasly": {
@@ -36,7 +36,7 @@
       "wins2018": 0
     },
     "hamilton": {
-      "points": 68,
+      "points": 86,
       "championships": 5,
       "currentteam": "Mercedes",
       "teams": ["McLaren", "Mercedes"],
@@ -64,7 +64,7 @@
       "wins2018": 0
     },
     "leclerc": {
-      "points": 36,
+      "points": 47,
       "championships": 0,
       "currentteam": "Ferrari",
       "teams": ["Sauber", "Ferrari"],
@@ -78,21 +78,21 @@
       "wins2018": 0
     },
     "norris": {
-      "points": 8,
+      "points": 12,
       "championships": 0,
       "currentteam": "McLaren",
       "teams": ["McLaren"],
       "wins2018": 0
     },
     "perez": {
-      "points": 5,
+      "points": 13,
       "championships": 0,
       "currentteam": "Force India",
       "teams": ["Sauber", "McLaren", "Force India"],
       "wins2018": 0
     },
     "raikkonen": {
-      "points": 12,
+      "points": 13,
       "championships": 1,
       "currentteam": "Sauber",
       "teams": ["Lotus", "Ferrari", "Sauber"],
@@ -113,28 +113,28 @@
       "wins2018": 0
     },
     "sainz": {
-      "points": 0,
+      "points": 6,
       "championships": 0,
       "currentteam": "McLaren",
       "teams": ["Toro Rosso", "Renault", "McLaren"],
       "wins-2018": 0
     },
     "stroll": {
-      "points": 2,
+      "points": 4,
       "championships": 0,
       "currentteam": "Force India",
       "teams": ["Williams", "Force India"],
       "wins2018": 0
     },
     "verstappen": {
-      "points": 39,
+      "points": 51,
       "championships": 0,
       "currentteam": "Redbull",
       "teams": ["Redbull"],
       "wins2018": 1
     },
     "vettel": {
-      "points": 37,
+      "points": 52,
       "championships": 4,
       "currentteam": "Ferrari",
       "teams": ["BMW Sauber", "Toro Rosso", "Redbull", "Ferrari"],

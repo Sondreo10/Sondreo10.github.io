@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="F1.css">
+    <link rel="stylesheet" href="../css/F1.css">
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
 <script>
   // Initialize Firebase
@@ -17,38 +17,30 @@
   };
   firebase.initializeApp(config);
 </script>
-</head>
+  </head>
   <body>
     <header>
-      <h1 id="h1kjørere">Drivers</h1>
-      <div class="skrt">
-        <span>F1</span>
-        <div class="innhold">
-          <a href="F2Hjem.html">F2</a>
-          <a href="F3Hjem.html">F3</a>
-          <a href="FEHjem.html">FE</a>
-        </div>
-      </div>
+      <h1 id="h1kjørere">RACES</h1>
       <nav class="nav">
         <ul>
+            <li><a href="drivers.html">Drivers</a></li>
             <li><a href="shop.html">Shop</a></li>
-            <li><a href="races.html">Races</a></li>
             <li><a href="standings.html">Standings</a></li>
             <li><a href="F1hjem.html">Hjem</a></li>
           </ul>
       </nav>
     </header>
     <main>
-      <section id="eskrt">
+      <section id="eskertertert">
 
       </section>
     </main>
     <script>
-        const main = document.querySelector("#eskrt"); // Variabel som referer til mian-elementet
+        const main = document.querySelector("#eskertertert"); // Variabel som referer til mian-elementet
 
           // Referanser til databasen
         const db = firebase.database();
-        const pokemon = db.ref("førere"); // Referer til alt som ligger under sko i databasen
+        const pokemon = db.ref("races"); // Referer til alt som ligger under sko i databasen
 
         function visPokemon(snapshot){
               //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
@@ -57,11 +49,12 @@
 
             main.innerHTML +=`
                 <div id="kjører">
-                  <h2>${key}</h2>
+                  <h2>${f1Snap.round}</h2>
                   <div class="mid">
-                  <p id="first">Current team: </p>
-                  <p id="second">${f1Snap.currentteam}</p>
-                  <a id="linkStilish" href="førerSide.html?id=${key}">Mere info</a>
+                  <p id="second">${f1Snap.track}</p>
+                  <p id="second">${f1Snap.country}</p>
+                  <p id="second">${f1Snap.date}</p>
+                  <a id="linkStilish" href="raceSide.html?id=${key}">Mere info</a>
                   </div>
                   </div>
             `;

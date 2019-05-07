@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="nob" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/F1.css">
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAa23f4pd3TeNfBSX5gowzBBGozl-ydtBw",
+    authDomain: "f1-overview.firebaseapp.com",
+    databaseURL: "https://f1-overview.firebaseio.com",
+    projectId: "f1-overview",
+    storageBucket: "f1-overview.appspot.com",
+    messagingSenderId: "1057935598309"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+  <body>
+    <header>
+      <h1 id="h1kjørere">Drivers</h1>
+      <nav class="nav">
+        <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="races.html">Races</a></li>
+            <li><a href="standings.html">Standings</a></li>
+            <li><a href="F1hjem.html">Hjem</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <main id="driverMain">
+      <div class="driverDrop">
+        <span id="dDropSpan">Sort by team</span>
+    <div class="knapper">
+      <button onclick="sortTeamF()">Ferrari</button>
+      <button onclick="sortTeamW()">Williams</button>
+      <button onclick="sortTeamR()">Redbull</button>
+      <button onclick="sortTeamRe()">Renault</button>
+      <button onclick="sortTeamFO()">Force India</button>
+      <button onclick="sortTeamTR()">Toro Rosso</button>
+      <button onclick="sortTeamS()">Sauber</button>
+      <button onclick="sortTeamM()">McLaren</button>
+      <button onclick="sortTeamMe()">Mercedes</button>
+      <button onclick="sortTeamH()">Haas</button>
+      <button onclick="visAlle()">Vis alle</button>
+    </div>
+  </div>
+      <section id="eskrt">
+
+      </section>
+    </main>
+    <script>
+        const main = document.querySelector("#eskrt"); // Variabel som referer til mian-elementet
+
+          // Referanser til databasen
+        const db = firebase.database();
+        const pokemon = db.ref("førere"); // Referer til alt som ligger under sko i databasen
+
+        function visPokemon(snapshot){
+              //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
+            let f1Snap = snapshot.val();
+            let key = snapshot.key;
+
+            main.innerHTML +=`
+                <div id="kjører">
+                  <h2>${key}</h2>
+                  <div class="mid">
+                    <p id="first">Current team: </p>
+                    <p id="second">${f1Snap.currentteam}</p>
+                    <a id="linkStilish" href="førerSide.html?id=${key}">Mere info</a>
+                  </div>
+                </div>
+            `;
+        }
+
+
+        function visAlle(){
+          main.innerHTML = ``
+          pokemon.on("child_added",visPokemon);
+        }
+
+        visAlle();
+
+        function sortTeamF() {
+          main.innerHTML = ``
+          pokemon
+          .orderByChild("currentteam")
+          .equalTo("Ferrari")
+          .on("child_added", visPokemon);
+        }
+
+        function sortTeamW() {
+          main.innerHTML = ``
+          pokemon
+          .orderByChild("currentteam")
+          .equalTo("Williams")
+          .on("child_added", visPokemon);
+        }
+
+        function sortTeamS() {
+          main.innerHTML = ``
+          pokemon
+          .orderByChild("currentteam")
+          .equalTo("Sauber")
+          .on("child_added", visPokemon);
+        }
+
+        function sortTeamR() {
+          main.innerHTML = ``
+          pokemon
+          .orderByChild("currentteam")
+          .equalTo("Redbull")
+          .on("child_added", visPokemon);
+        }
+
+        function sortTeamRe() {
+          main.innerHTML = ``
+          pokemon
+          .orderByChild("currentteam")
+          .equalTo("Renault")
+          .on("child_added", visPokemon);
+        }
+
+        function sortTeamM() {
+          main.innerHTML = ``
+          pokemon
+          .orderByChild("currentteam")
+          .equalTo("McLaren")
+          .on("child_added", visPokemon);
+        }
+
+        function sortTeamFO() {
+          main.innerHTML = ``
+          pokemon
+          .orderByChild("currentteam")
+          .equalTo("Force India")
+          .on("child_added", visPokemon);
+        }
+
+        function sortTeamTR() {
+          main.innerHTML = ``
+          pokemon
+          .orderByChild("currentteam")
+          .equalTo("Toro Rosso")
+          .on("child_added", visPokemon);
+        }
+
+        function sortTeamMe() {
+          main.innerHTML = ``
+          pokemon
+          .orderByChild("currentteam")
+          .equalTo("Mercedes")
+          .on("child_added", visPokemon);
+        }
+
+        function sortTeamH() {
+          main.innerHTML = ``
+          pokemon
+          .orderByChild("currentteam")
+          .equalTo("Haas")
+          .on("child_added", visPokemon);
+        }
+
+        function numeroUno() {
+          var input, filter, section, div, i, txtValue;
+          input = document.getElementById('myInput');
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUl");
+          li = ul.get
+        }
+
+    </script>
+  </body>
+</html>

@@ -1,29 +1,30 @@
 @Font-face {
   font-family: "font";
-  src: url('skrtx.ttf');
+  src: url('../text/skrtx.ttf');
 }
 
 @font-face {
   font-family: "under";
-  src: url('CaviarDreams_Bold.ttf');
+  src: url('../text/CaviarDreams_Bold.ttf');
 }
 
 @font-face {
   font-family: "under2";
-  src: url('CaviarDreams.ttf');
+  src: url('../text/CaviarDreams.ttf');
 }
 
 body {
   display: grid;
   grid-template-rows: 13% 70% 10%;
-  background-color: white;
+  background-color: red;
 }
 
 /*header*/
 
 #h1shop {
-  width: 300px;
+  width: 500px
 }
+
 
 #h1logo {
   width: 200px;
@@ -40,98 +41,66 @@ body {
 }
 
 #h1kjørere {
-  width: 400px;
+  width: 750px;
+  border-radius: 10px;
+}
+
+#h1Stan {
+  width: 950px;
 }
 
 header {
-
+  height: 250px;
 }
+
+#hjemHeader {
+  height: 330px;
+}
+
 
 .height {
   height: 1000px;
 }
 
 h1 {
+  border-radius: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
   color: red;
-  margin-top: -5px;
+  margin-top: 30px;
   text-align: center;
-  font-size: 100px;
+  font-size: 160px;
   width: 600px;
   text-transform: uppercase;
 }
 
-#bare1 {
-  margin-top: -250px;
-}
-
-.skrt {
-  position: fixed;
-  margin-top: -170px;
+.bare1 {
+  position: absolute;
   margin-left: 5px;
+  margin-top: -240px;
   display: inline-block;
   width: 50px;
+  position: fixed;
 }
 
-.skrt:hover > .innhold {
-  display: block;
-  border-top: white;
-}
+#navhjem {
 
-.innhold {
-  width: 52px;
-  display: none;
-  position: absolute;
-  border: red solid 2px;
-  margin-top: -2px;
-}
-
-span {
-  display: block;
-  width: 51px;
-  background-color: white;
-  font-size: 60px;
-  color: red;
-  border: solid red;
-  font-family: "font";
-}
-
-span:hover {
-  background-color: red;
-  color: white;
-  transition: 0.2s;
-}
-
-.skrt:hover > span {
-  border-bottom: solid rgba(0,0,0,0) 2px;
-}
-
-.innhold > a {
-  display: block;
-  font-size: 40px;
-  width: 52px;
-  color: red;
-  text-decoration: none;
-  font-family: "font";
-}
-
-.innhold > a:hover {
-  background-color: red;
-  color: white;
-  transition: 0.2s;
 }
 
 .nav {
-  display: block;
+  width: 100%;
 }
 
 ul {
+  margin-bottom: 20px;
+  left: 48%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
-  left: 50%;
-  top: 25%;
+  top: 35%;
   transform: translate(-50%, -50%);
   display: flex;
 }
@@ -141,6 +110,9 @@ ul {
 }
 
 ul > li {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   line-height: normal;
   list-style: none;
 }
@@ -150,9 +122,9 @@ ul > li > a {
   display: block;
   padding: 10px 15px;
   text-align: center;
-  font-size: 35px;
-  margin: 5px;
-  color: red;
+  font-size: 47px;
+  margin: 10px;
+  color: white;
   text-transform: uppercase;
   text-decoration: none;
   transition: 0s;
@@ -164,12 +136,13 @@ ul > li > a:before {
   bottom: 8px;
   left: 0;
   width: 100%;
-  height: 48px;
-  border-radius: 5px;
-  background: rgba(255, 40, 40, 30%);
+  height: 4px;;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 100%);
+  color: red;
   overflow: hidden;
   transform: scaleX(0);
-  transform-origin: middle;
+  transform-origin: top;
   transition: 0.2s;
 }
 
@@ -182,8 +155,24 @@ ul> li > a:hover:before {
 }
 
 /*Main*/
+
+.knapper {
+  position:
+  height: 70px;
+}
+
+#driverMain {
+  height: 1000px;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+}
+
 main {
   display: block;
+  margin-top: 20px;
 }
 
 #linkStilish {
@@ -194,9 +183,9 @@ main {
   transition: 0s;
 }
 #shopen {
-  margin-top: 90px;
   display: grid;
-  grid-template-columns: 20% 20% 40% 20%
+  grid-template-columns: 20% 20% 40% 20%;
+  margin-top: 180px;
 }
 
 p {
@@ -209,13 +198,14 @@ p {
 
 #standingser{
   display: block;
-  margin-top: 180px;
+  margin-top: 310px;
   margin-left: auto;
   margin-right: auto;
 }
 
 table {
-  border-collapse: collapse;
+  border: white 2px solid;
+  background-color: white;
 }
 
 thead {
@@ -235,15 +225,19 @@ th {
   padding: 10px;
   font-size: 30px;
   border-bottom: red 2px solid;
+  color: red;
 }
 
 td {
   text-transform: capitalize;
   padding: 5px;
   margin: -5px;
+  color: red;
+  width: 110%;
 }
 
 section.tabell {
+  margin-top: -300px;
 }
 
 section.bies {
@@ -260,6 +254,7 @@ section.bies {
   border: solid red 2px;
   margin: 20px;
   border-radius: 5px;
+  background-color: white;
 }
 
 .boi2 > img {
@@ -291,62 +286,100 @@ section.bies {
   text-align: center;
   width: 250px;
   height: 230px;
-  margin: 15px;
-  border: solid red 2px;
+  margin: 10px;
+  background-color: white;
   border-radius: 5px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: solid rgba(255, 255, 255, 0%);
+}
+
+#kjører:hover {
+  background-color: rgba(255, 255, 255, 10%);
+  transition: 0.1s;
+  border: white 2px solid;
+}
+
+#kjører:hover > h2 {
+  color: white;
+  transition: 0.1s;
+}
+
+#kjører:hover > .mid > p#second {
+  color: white;
+  transition: 0.1s;
+}
+
+#kjører:hover > .mid > a {
+  color: white;
+  transition: 0.1s;
+}
+
+#kjører:hover > .mid > p#first {
+  color: white;
+  transition: 0.1s;
 }
 
 #kjører2 {
   text-align: center;
-  margin: 15px;
+  margin: 5px;
   border-radius: 5px;
+  height: 600px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+#kjører2 > p {
+  color: red;
+}
+
+#driverMain {
+  margin-top: 140px;
+}
+
 #eskrt {
-  margin-top: -100px;
+  display: block;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  width: 800px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 1100px;
+  margin: 10px;
   margin-left: auto;
   margin-right: auto;
 }
 
 #eskert {
-  margin-top: 150px;
+  margin-top: 190px;
   border-radius: 5px;
-  border: solid red 2px;
+  border: solid white 2px;
   width: 400px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  background-color: white;
 }
 
 #eskertert {
+  margin-top: 240px;
   border-radius: 5px;
-  border: solid red 2px;
+  border: solid white 2px;
   width: 400px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 500px;
-  margin-top: 150px;
+  background-color: white;
 }
 
 #eskertertert {
-  width: 700px;
+  width: 1100px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   margin: auto;
   margin-right: auto;
-  margin-top: -80px;
+  margin-top: 80px;
 }
 
 h2 {
@@ -356,11 +389,12 @@ h2 {
 }
 
 .shopitems {
+  background-color: white;
   margin-top: -30px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: solid red 2px;
+  border: solid white 2px;
   margin-bottom: 80px;
   margin-left: 30px;
   margin-right: 30px;
@@ -369,17 +403,8 @@ h2 {
 }
 
 .shopitems:hover {
-  background-color: red;
-  transition: 0.5s;
-  transform: scale(1.05);
-}
-
-.shopitems:hover > #shopunder > p {
-  color: white;
-}
-
-.shopitems:hover > #shopunder > h2 {
-  color: white;
+  transition: 0.1s;
+  transform: scale(1.02);
 }
 
 #items {
@@ -436,7 +461,7 @@ h2 {
 
 }
 
-.sort > button {
+.sort > #shopSort {
   width: 100px;
   background: white;
   height: 100px;
@@ -446,8 +471,70 @@ h2 {
   margin: -1px;
 }
 
-button:hover {
+#shopSort:hover {
   background-color: red;
   color: white;
   transition: 0.2s;
+}
+
+.driverDrop {
+  position: absolute;
+  margin-left: 5px;
+  margin-top: -280px;
+  display: inline-block;
+  width: 150px;
+}
+
+.driverDrop:hover > .knapper {
+  display: block;
+  border-top: white;
+}
+
+.knapper {
+  width: 150px;
+  display: none;
+  margin-top: 2px;
+}
+
+#dDropSpan {
+  display: block;
+  width: 180px;
+  background-color: white;
+  font-size: 32px;
+  text-align: center;
+  color: red;
+  font-family: "font";
+}
+
+#dDropSpan:hover {
+  background-color: white;
+  color: red;
+  transition: 0.2s;
+}
+
+.driverDrop:hover > #dDropSpan {
+  border-bottom: solid white 2px;
+}
+
+.knapper > button {
+  border: none;
+  display: block;
+  width: 180px;
+  background: white;
+  height: 40px;
+  color: red;
+  font-family: "under";
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.knapper > button:hover {
+  background-color: red;
+  color: white;
+  transition: 0.1s;
+}
+
+.driverDriep {
+  margin-left: -300px;
+  margin-top: 200px;
 }

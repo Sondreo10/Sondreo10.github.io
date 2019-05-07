@@ -1,13 +1,12 @@
--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="nob" dir="ltr">
 
 <head>
   <meta charset="utf-8">
   <title>F1 Overview</title>
-  <link rel="stylesheet" href="F1.css">
+  <link rel="stylesheet" href="../css/F1.css">
   <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
 <script>
-  // Initialize Firebase
   var config = {
     apiKey: "AIzaSyAa23f4pd3TeNfBSX5gowzBBGozl-ydtBw",
     authDomain: "f1-overview.firebaseapp.com",
@@ -23,14 +22,6 @@
 <body>
   <header>
     <h1 id="h1shop">Shop</h1>
-    <div class="skrt">
-      <span>F1</span>
-      <div class="innhold">
-        <a href="F2Hjem.html">F2</a>
-        <a href="F3Hjem.html">F3</a>
-        <a href="FEHjem.html">FE</a>
-      </div>
-    </div>
     <nav class="nav">
       <ul>
           <li><a href="drivers.html">Drivers</a></li>
@@ -46,25 +37,15 @@
 
     </div>
     <div class="sort">
-      <button onclick="priStig()">Pris (stigende)</button>
-      <button onclick="priSynk()">Pris (synkende)</button>
-      <button onclick="navnstig()">Navn (a-z)</button>
-      <button onclick="navnsynk()">Navn (z-a)</button>
+      <button id="shopSort" onclick="priStig()">Pris (stigende)</button>
+      <button id="shopSort" onclick="priSynk()">Pris (synkende)</button>
+      <button id="shopSort" onclick="navnstig()">Navn (a-z)</button>
+      <button id="shopSort" onclick="navnsynk()">Navn (z-a)</button>
     </div>
     <section id="items">
     </section>
   </main>
 
-  <footer>
-    <table>
-      <thead>
-
-      </thead>
-      <tbody>
-
-      </tbody>
-    </table>
-  </footer>
   <script type="text/javascript">
   //Referanse til HTML-elementet main.
     const main = document.querySelector("#items")
@@ -136,7 +117,7 @@
             <h2>${key}</h2>
             <p>Pris: ${objekt.pris}</p>
             <p>Farge: ${objekt.farge}</p>
-            <img id="shopimag" src="${key}.jpg">
+            <img id="shopimag" src="../bilder/${key}.jpg">
             <a id="kjøp" onclick="leggTilKurv()">Buy</a>
           </div>
           </article>
@@ -160,7 +141,7 @@
             <h2>${key}</h2>
             <p>Pris: ${objekt.pris}</p>
             <p>Farge: ${objekt.farge}</p>
-            <img id="shopimag" src="${key}.jpg">
+            <img id="shopimag" src="../bilder/${key}.jpg">
             <a id="kjøp" onclick="leggTilKrurv()">Buy</a>
           </div>
           </article>
