@@ -1,0 +1,414 @@
+@Font-face {
+  font-family: "font";
+  src: url('./skrtx.ttf');
+}
+
+@font-face {
+  font-family: "under";
+  src: url('./CaviarDreams_Bold.ttf');
+}
+
+@font-face {
+  font-family: "under2";
+  src: url('./CaviarDreams.ttf');
+}
+
+body {
+    background: url("scoderia.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-rows: 20, auto, 10;
+    display: grid;
+    padding: 10px;
+    background-color: rgb(150, 150, 255);
+}
+
+h1 {
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "under";
+  margin-left: 20px;
+  width: 100%;
+  font-size: 50px;
+  margin-top: -14px;
+  color: #E4525B;
+}
+
+#bilD {
+  width: 200px;
+}
+
+header {
+  width: 103.2%;
+  margin-left: -30px;
+  height: 104px;
+  padding-top: 50px;
+  margin-top: -50px;
+  background-color: #FDFDFD;
+  display: grid;
+  grid-template-columns: 20% 86%;
+}
+
+.line {
+  color: rgba(0, 0, 255, 70%);
+  height: 2px;
+  margin-bottom: -1px;
+  border-bottom: 2px solid rgb(0, 0, 255);
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 10px;
+  height: 100%;
+}
+
+nav>ul {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+  margin-left: -10%;
+  display: grid;
+  margin-top: -18px;
+  height: 74px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+nav>ul>li {
+  display: inline-block;
+  margin: -2px;
+  height: 100%;
+}
+
+nav > ul > li:hover {
+  background-color: #0C4A65;
+  transition: 0.2s;
+}
+
+nav > ul > li:hover > a {
+  color: white;
+}
+
+nav>ul>li>a {
+  text-transform: uppercase;
+  height: 100%;
+  width: 100%;
+  display: block;
+  letter-spacing: 2px;
+  font-family: "under";
+  padding-bottom: 15.5px;
+  padding-top: 20px;
+  list-style: none;
+  color: #0C4A65;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#ordntliMain {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.secHjem {
+  width: 100%;
+  margin-top: 20px;
+  height: 562px;
+  display: block;
+  width: 500px;
+  display: grid;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.yoyo {
+  padding: 20px;
+  width: 97%;
+  display: block;
+}
+
+.yoyo > h2 {
+  color: #0C4A65;
+  font-family: "under";
+  text-transform: uppercase;
+  margin-top: -10px;
+}
+
+.yoyo > p {
+  color: blue;
+}
+
+.secHjemRight {
+  margin-top: 20px;
+  border: solid 2px rgb(0, 0, 255);
+  border-radius: 3px;
+  height: 600px;
+  background-color: white;
+}
+
+.jojo {
+  width: 100%;
+}
+
+a#samtid {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  font-family: "under2";
+  color: #E4525B;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.secHjemRight > button {
+  margin-top: 5px;
+  display: block;
+  margin-left:  auto;
+  margin-right: auto;
+  border: solid 2px rgb(0, 0, 255);
+  background-color: white;
+  color: rgba(0, 0, 255, 60%);
+  width: 400px;
+  border-radius: 25px;
+  height: 50px;
+  font-family: "under";
+  text-transform: uppercase;
+}
+
+.secHjemRight > button:active {
+  background-color: rgb(0, 0, 255);
+  color: white;
+}
+
+.secHjemRight > button:focus {
+  outline: 0;
+}
+
+.random {
+  overflow: scroll;
+  height: 545px;
+}
+
+.random > p {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+#randomOver {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #E4525B;
+  font-size: 50px;
+  height: 60px;
+  font-family: "under";
+  text-transform: uppercase;
+}
+
+#random {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+* {box-sizing:border-box}
+
+.slide {
+  width: 230%;
+  margin-top: 20px;
+  margin-left: -580px;
+}
+
+#image {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+  border-radius: 20px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#terningShit {
+  margin-top: 50px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  background-size: cover;
+}
+
+#nullTilTi {
+  color: blue;
+}
+
+h2#h2Prosjekter {
+  text-align: center;
+  font-size: 40px;
+  color: #0C4A65;
+  background-color: white;
+  width: 600px;
+  font-family: "under2";
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#secProsjekter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.divProsjekter {
+  margin: 5px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.divProsjekter > a {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#f2logo {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.om-meg-sec {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: block;
+  width: 800px;
+  display: grid;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.omdiv {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.omdiv > h2 {
+  font-size: 50px;
+  color: #0C4A65;
+  font-family: "under";
+  text-align: center;
+}
+
+.omdiv > p {
+  font-size: 20px;
+  font-family: "under2";
+  text-align: center;
+}
+
+.jegkan > p {
+  text-align: center;
+  font-size: 30px;
+  font-family: "under";
+  color: #E4525B;
+}

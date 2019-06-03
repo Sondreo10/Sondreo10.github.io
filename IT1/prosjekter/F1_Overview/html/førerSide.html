@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Drivers</title>
+    <link rel="stylesheet" href="../css/F1.css">
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyAa23f4pd3TeNfBSX5gowzBBGozl-ydtBw",
+    authDomain: "f1-overview.firebaseapp.com",
+    databaseURL: "https://f1-overview.firebaseio.com",
+    projectId: "f1-overview",
+    storageBucket: "f1-overview.appspot.com",
+    messagingSenderId: "1057935598309"
+    };
+    firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 id="h1kjørere">DRIVERS</h1>
+      <nav class="nav">
+        <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="races.html">Races</a></li>
+            <li><a href="standings.html">Standings</a></li>
+            <li><a href="F1hjem.html">Hjem</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="okei">
+
+      </div>
+      <div class="okei">
+        <p>jaja</p>
+      </div>
+      <section id="eskert">
+
+      </section>
+
+    </main>
+    <script type="text/javascript">
+        // rFERANSER TIL HTML ELEMENTER
+        const main = document.querySelector("#eskert");
+
+        //Kode som henter ut info fra URL
+        let url_string = window.location.href;
+        let url = new URL(url_string);
+        let id = url.searchParams.get("id");
+
+        // Referanser til databasen
+        const db = firebase.database();
+        const pokemon = db.ref("førere");
+        const valgtPokemon = db.ref("førere/"+id);
+
+        //Setup eller oppstart
+        visValgtPokemon();
+
+        //FUNKSJONSDEFINISJONER
+        function visValgtPokemon(){
+            main.innerHTML = ``;
+            valgtPokemon.on("value", genererHTML);
+        }
+
+        function genererHTML(snapshot){
+            //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
+            let key = snapshot.key;
+            let objekt = snapshot.val();
+            console.log(key,objekt);
+
+            main.innerHTML +=`
+            <div id="kjører2">
+              <h2>${key}</h2>
+            <div class="mid">
+              <p id="first">Current team:
+              <p id="second">${objekt.currentteam}</p>
+              <p id="first">Teams driven for:</p>
+              <p id="second">${objekt.teams}</p>
+              <p id="first">Championships won:</p>
+              <p id="second">${objekt.championships}</p>
+              <img src="../bilder/${key}.jpg">
+              </div>
+              </div>
+            `
+        }
+    </script>
+  </body>
+</html>

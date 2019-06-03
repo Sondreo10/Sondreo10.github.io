@@ -1,0 +1,94 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#secAllePokemon{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pokemon {
+  text-align: center;
+  background: rgba(122, 173, 255);
+  margin: 10px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.pokemon > h3 {
+  background: rgba(0, 17, 175);
+  width: 175px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  border-radius: 7px;
+}
+
+img {
+  width: 175px;
+}
+
+.driverDrop {
+  position: absolute;
+  margin-left: 5px;
+  margin-top: -280px;
+  display: inline-block;
+  width: 150px;
+}
+
+.driverDrop:hover > .knapper {
+  display: block;
+  border-top: white;
+}
+
+.knapper {
+  width: 150px;
+  display: none;
+  margin-top: 2px;
+}
+
+#dDropSpan {
+  display: block;
+  width: 180px;
+  background-color: white;
+  font-size: 32px;
+  text-align: center;
+  color: red;
+  font-family: "font";
+}
+
+#dDropSpan:hover {
+  background-color: white;
+  color: red;
+  transition: 0.2s;
+}
+
+.driverDrop:hover > #dDropSpan {
+  border-bottom: solid white 2px;
+}
+
+
+.knapper > button {
+  border: none;
+  display: block;
+  width: 180px;
+  background: white;
+  height: 40px;
+  color: red;
+  font-family: "under";
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.knapper > button:hover {
+  background-color: red;
+  color: white;
+  transition: 0.1s;
+}
+
+.driverDriep {
+  margin-left: -300px;
+  margin-top: 200px;
+}

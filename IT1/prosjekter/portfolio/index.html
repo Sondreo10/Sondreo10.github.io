@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./stil.css">
+  </head>
+  <body>
+    <header>
+      <h1>Sondre</h1>
+      <nav>
+        <ul>
+          <li><a href="om.html">Om meg</a></li>
+          <li><a href="cont.html">Kontakt</a></li>
+          <li><a href="prosjekter.html">Prosjekter</a></li>
+          <li><a href="tull.html">Tulleting</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="index.html">Hjem</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="ordntliMain">
+      <section class="secHjem">
+        <div class="yoyo">
+          <h2>Jeg kan mye, men altfor lite om pils</h2>
+          <p>Dette er meg:</p>
+          <img id="bilD" src="megogmari.jpg">
+        </div>
+        <div class="yoyo">
+          <h2>Erfaringer</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </section>
+      <section class="slide">
+        <div class="slideshow-container">
+
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+    <img id="image" src="img1.jpg">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+    <img id="image" src="img2.jpg">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+    <img  id="image" src="img3.jpg">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</section>
+    </main>
+    <script src="java.js"></script>
+    <script type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+  </body>
+</html>

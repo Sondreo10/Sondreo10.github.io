@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button onclick="farge()"></button>
+    <p id="fargeTull">jaja</p>
+
+    <script type="text/javascript">
+      function farge() {
+        var a = Math.floor(Math.random() * 4) + 1;
+        if (a === 1) {
+          document.getElementById('fargeTull').style.color = 'blue';
+        } else if (a === 2) {
+          document.getElementById('fargeTull').style.backgroundColor = "yellow";
+        } else if (a === 3) {
+          document.getElementById('fargeTull').style.backgroundColor = "green";
+        } else if (a === 4) {
+          document.getElementById('fargeTull').style.backgroundColor = "red";
+        }
+      }
+
+    </script>
+  </body>
+</html>
