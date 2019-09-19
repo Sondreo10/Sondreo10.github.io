@@ -1,0 +1,73 @@
+h1 {
+  border: black solid 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+  font-weight: bold;
+  background: rgba(0, 255, 0, 0.8);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 300px;
+  font-family: arial;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+}
+
+section {
+  border: solid black 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: rgba(0, 0, 255, 0.5);
+  width: 90%;
+  border-radius: 30px;
+}
+
+nav {
+  display: block;
+  border-radius: 30px;
+  border: black solid 4px;
+  background: rgba(0, 255, 0, 0.5);
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+aside {
+  display: block;
+  border-radius: 30px;
+  border: black solid 4px;
+  background: rgba(0, 255, 0, 0.5);
+  text-align: center;
+}
+
+section > header > h2 {
+  border: black 4px solid;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 26px;
+  background: rgba(0, 255, 0, 0.5);
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 30px;;
+  padding-bottom: 10px;
+  width: 300px;
+  font-family: arial;
+}
+
+section > article > h3 {
+  font-family: arial;
+  font-size: 22px;
+}
+
+section > article > p  {
+  font-size: 20px;
+  font-family: arial;
+}

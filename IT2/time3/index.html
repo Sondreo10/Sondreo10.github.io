@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>{
+    <style media="screen">
+      #reload {
+        font-family: arial;
+        background-color: red;
+        color: red;
+      }
+    </style>
+    <h1>Gjetelek</h1>
+    <section id="knapp">
+
+    </section>
+    <audio id="pornhub" src="phintro.mp3";
+
+    </audio>
+
+    <script type="text/javascript">
+      var riktigTall = 55;
+      var gjettet = prompt("brukernavn");
+      var passord = prompt("passord");
+      var main = document.getElementById("knapp");
+      var x = document.getElementById("pornhub");
+
+      if (passord=="codespråk" && gjettet=="Sondreo1") {
+        document.write("Log in sucessfull");
+      }
+      else {
+        document.write("Wrong username or password");
+        x.play();
+        main.innerHTML +=`
+          <input type="button" onClick="document.location.reload(true)" value="prøv igjen" id="reload"/>
+        `
+      }
+    </script>
+  </body>
+</html>

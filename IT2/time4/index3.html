@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var a = 0;
+      var b = 100;
+
+      var fasit = Math.floor(Math.random()*b+a);
+
+      var forsøk = 5;
+      /*antall forsøk*/
+
+      var teller = 1;
+
+      alert("gjett et tall mellom "+a+" og "+b+", premien er en bug")
+
+      var yeet = Number(prompt("Gjett et tall.Du har"+forsøk+"igjen"))
+      while(yeet !=fasit && teller){
+        if (yeet<fasit){
+          alert("Ditt forsøk på"+yeet+"er for lavt!")
+        }
+        else {
+          alert("Ditt forsøk på å gjette"+yeet+"var for høyt!")
+        }
+        yeet = Number(prompt("Nå får du faen meg gjette en gang til, Du har jo brukt " + teller + " forsøk for helvete"));
+        teller += 1;
+      }
+      if (yeet==fasit) {
+        document.write("Riktig svar")
+      }
+      else {
+        document.write("Haha du er tom for forsøk, du har brukt " +forsøk+ "fasit er " + fasit)
+      }
+    </script>
+  </body>
+</html>
