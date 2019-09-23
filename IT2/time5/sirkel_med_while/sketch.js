@@ -9,7 +9,7 @@ let dvd;
 let r, g, b;
 
 function preload() {
-  img = "dvdlogo1.png";
+  img = "./dvdlogo1.png";
   dvd = loadImage(img.crossOrigin = "dvdlogo.png");
 }
 
